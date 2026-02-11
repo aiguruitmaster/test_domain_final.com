@@ -3,557 +3,514 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LuxeSpin Casino | Premium Gaming & Massive Bonuses</title>
-    <meta name="description" content="Experience the thrill of LuxeSpin Casino. Claim up to €1,500 + 200 Free Spins at test_domain_final.com. Join 15,000+ players today for instant payouts!">
+    <title>LuxeSpin Casino | Premium Gaming & Huge Bonuses - test_domain_final.com</title>
+    <meta name="description" content="Dołącz do LuxeSpin Casino (test_domain_final.com) dla najlepszych wrażeń z gry. Odbierz bonus powitalny 500 € i 200 darmowych spinów już dziś!">
     
     <link rel="canonical" href="https://test_domain_final.com" />
     <link rel="alternate" hreflang="pl" href="https://test_domain_final.com" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
     
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Casino",
-      "name": "LuxeSpin",
+      "@type": "WebPage",
+      "name": "LuxeSpin Casino - test_domain_final.com",
+      "description": "Premium online casino experience with 4,000+ games and elite rewards.",
       "url": "https://test_domain_final.com",
-      "logo": "https://test_domain_final.com/logo.png",
-      "description": "LuxeSpin is the world's leading destination for high-stakes gaming and premium casino entertainment.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "MT"
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://test_domain_final.com"
+        }]
       }
     }
     </script>
 
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #121212; color: #ffffff; }
-        .hero-gradient { background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(18,18,18,0.4) 100%); }
-        .btn-glow:hover { box-shadow: 0 0 20px rgba(0, 200, 83, 0.6); transform: translateY(-2px); transition: all 0.3s ease; }
+        body { font-family: 'Inter', sans-serif; background-color: #1A1A1A; color: #FFFFFF; }
+        .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #F1D592 50%, #D4AF37 100%); }
+        .gold-text { background: linear-gradient(135deg, #D4AF37 0%, #F1D592 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .btn-shadow { box-shadow: 0 4px 20px rgba(212, 175, 55, 0.4); }
         .game-card:hover .play-overlay { opacity: 1; }
-        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .accordion-content.active { max-height: 500px; }
-        @keyframes pulse-green {
-            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 200, 83, 0.7); }
-            70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(0, 200, 83, 0); }
-            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 200, 83, 0); }
-        }
-        .pulse-cta { animation: pulse-green 2s infinite; }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .bonus-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .bonus-card.active .bonus-content { max-height: 500px; }
+        .bonus-card.active .chevron-icon { transform: rotate(180deg); }
     </style>
 </head>
 <body class="antialiased">
 
-    <!-- Header -->
-    <header class="fixed w-full z-50 bg-[#121212]/90 backdrop-blur-md border-b border-white/10">
-        <div class="container mx-auto px-4 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-4">
-                <a href="https://test_domain_final.com" class="text-2xl font-black italic tracking-tighter text-[#00C853]">LUXESPIN</a>
-                <span class="hidden md:block bg-red-600 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">18+</span>
+    <!-- COOKIE BANNER -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] bg-black/95 border-t border-[#D4AF37]/30 p-4 md:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-sm text-gray-300 text-center md:text-left">Używamy plików cookie, aby poprawić komfort korzystania z naszej strony. Przeglądając test_domain_final.com, wyrażasz zgodę na naszą politykę. <a href="#" class="underline">Dowiedz się więcej</a>.</p>
+        <button id="accept-cookies" class="bg-[#D4AF37] text-black px-8 py-2 rounded-full font-bold text-sm hover:bg-[#F1D592] transition-colors uppercase tracking-wider">Akceptuję</button>
+    </div>
+
+    <!-- HEADER -->
+    <header class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 h-16 md:h-20 flex items-center justify-between">
+            <div class="flex items-center gap-8">
+                <a href="#" class="text-2xl md:text-3xl font-black italic tracking-tighter flex items-center gap-2">
+                    <span class="gold-gradient p-1 rounded text-black"><i data-lucide="crown"></i></span>
+                    LUXE<span class="gold-text">SPIN</span>
+                </a>
+                <nav class="hidden lg:flex items-center gap-6 text-sm font-bold uppercase tracking-widest text-gray-400">
+                    <a href="#games" class="hover:text-[#D4AF37] transition-colors">Games</a>
+                    <a href="#bonuses" class="hover:text-[#D4AF37] transition-colors">Promotions</a>
+                    <a href="#vip" class="hover:text-[#D4AF37] transition-colors">VIP Program</a>
+                </nav>
             </div>
             
-            <nav class="hidden lg:flex items-center gap-8 text-sm font-bold uppercase tracking-wide">
-                <a href="#games" class="hover:text-[#00C853] transition">Gry</a>
-                <a href="#bonuses" class="hover:text-[#00C853] transition">Promocje</a>
-                <a href="#payments" class="hover:text-[#00C853] transition">Płatności</a>
-                <a href="#vip" class="hover:text-[#00C853] transition">Program VIP</a>
-            </nav>
-
             <div class="flex items-center gap-3">
-                <a href="afflink.com?utm-source-test=20bet" class="hidden sm:block text-sm font-bold px-4 py-2 hover:text-[#00C853]">Login</a>
-                <a href="afflink.com?utm-source-test=20bet" class="bg-[#00C853] text-black text-sm font-black px-6 py-2.5 rounded-full btn-glow uppercase tracking-tight">Join Now</a>
-                <button id="menu-btn" class="lg:hidden p-2 text-white">
-                    <i data-lucide="menu"></i>
-                </button>
+                <div class="hidden sm:flex items-center gap-2 mr-4 text-xs font-bold text-white/60">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                    14,282 PLAYERS ONLINE
+                </div>
+                <a href="https://afflink.com?utm-source-test=20bet" class="hidden md:block text-sm font-bold uppercase hover:text-[#D4AF37] transition-colors">Login</a>
+                <a href="https://afflink.com?utm-source-test=20bet" class="gold-gradient text-black px-6 py-3 rounded-full font-black text-sm uppercase tracking-tighter btn-shadow hover:scale-105 transition-transform">Join Now</a>
+                <button id="menu-btn" class="lg:hidden p-2 text-white"><i data-lucide="menu"></i></button>
             </div>
         </div>
     </header>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-40 bg-[#121212] hidden flex flex-col pt-24 px-6">
-        <nav class="flex flex-col gap-6 text-2xl font-bold">
-            <a href="#games" class="mobile-link">Slots</a>
-            <a href="#games" class="mobile-link">Live Casino</a>
-            <a href="#bonuses" class="mobile-link">Bonuses</a>
-            <a href="#payments" class="mobile-link">Payments</a>
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-black hidden pt-24 px-6">
+        <button id="close-menu" class="absolute top-6 right-6 text-white"><i data-lucide="x"></i></button>
+        <nav class="flex flex-col gap-8 text-2xl font-black uppercase tracking-tighter">
+            <a href="#games" class="mobile-link gold-text">Casino Games</a>
+            <a href="#bonuses" class="mobile-link">Promotions</a>
+            <a href="#vip" class="mobile-link">VIP Club</a>
+            <a href="#support" class="mobile-link">Support</a>
         </nav>
-        <div class="mt-auto mb-10 border-t border-white/10 pt-6">
-            <p class="text-gray-500 text-xs mb-4 uppercase tracking-widest">Legal</p>
-            <div class="flex gap-4 opacity-50">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/BeGambleAware_Logo.svg/1200px-BeGambleAware_Logo.svg.png" class="h-6 grayscale" alt="BeGambleAware">
-                <div class="w-6 h-6 border border-white rounded-full flex items-center justify-center text-[10px] font-bold">18+</div>
+        <div class="mt-12 flex flex-col gap-4">
+            <a href="https://afflink.com?utm-source-test=20bet" class="w-full py-4 rounded-xl border border-[#D4AF37] text-[#D4AF37] text-center font-bold uppercase">Login</a>
+            <div class="flex justify-center gap-6 mt-8">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/MGA_Logo.svg/1200px-MGA_Logo.svg.png" alt="MGA" class="h-8 opacity-50">
+                <div class="border border-white/20 px-2 py-1 rounded text-xs font-bold text-white/40">18+</div>
             </div>
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <section class="relative min-h-[90vh] flex items-center pt-16 overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1596838132731-dd9d59058155?w=1920&q=80" class="w-full h-full object-cover" alt="Casino Background">
-            <div class="absolute inset-0 hero-gradient"></div>
-        </div>
-
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="max-w-3xl">
-                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3 py-1 rounded-full mb-6 border border-white/20">
-                    <span class="flex h-2 w-2 rounded-full bg-[#00C853] animate-ping"></span>
-                    <span class="text-xs font-bold uppercase tracking-wider">Dołącz do 15,402 aktywnych graczy</span>
-                </div>
-                <h1 class="text-5xl md:text-8xl font-black italic uppercase leading-none mb-4">
-                    Wygrywaj w <span class="text-[#00C853]">LuxeSpin</span>
-                </h1>
-                <p class="text-xl md:text-2xl font-light text-gray-300 mb-8 max-w-xl leading-relaxed">
-                    Poznaj dreszczyk emocji w ponad 3000 gier premium z ekskluzywnym pakietem powitalnym na test_domain_final.com.
-                </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4 mb-10">
-                    <a href="afflink.com?utm-source-test=20bet" class="pulse-cta bg-[#00C853] text-black text-xl font-black px-10 py-5 rounded-xl text-center btn-glow uppercase">
-                        Odbierz €1,500 Bonusu + 200 FS
-                    </a>
-                </div>
-
-                <div class="flex flex-wrap items-center gap-6 opacity-70 grayscale hover:grayscale-0 transition duration-500">
-                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/MGA_logo.svg/1200px-MGA_logo.svg.png" class="h-8" alt="MGA License">
-                    <div class="flex items-center gap-2">
-                        <i data-lucide="shield-check" class="text-[#00C853]"></i>
-                        <span class="text-xs font-bold uppercase">SSL Secured 256-bit</span>
-                    </div>
-                    <div class="flex items-center gap-2">
-                        <i data-lucide="zap" class="text-[#00C853]"></i>
-                        <span class="text-xs font-bold uppercase">Błyskawiczne Wypłaty</span>
-                    </div>
-                </div>
-                <p class="text-[10px] text-gray-500 mt-4 italic">*Obowiązuje Regulamin. Tylko dla nowych graczy. Minimalny depozyt €20.</p>
+    <main>
+        <!-- HERO SECTION -->
+        <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=1920" alt="Casino Background" class="w-full h-full object-cover opacity-40">
+                <div class="absolute inset-0 bg-gradient-to-t from-[#1A1A1A] via-[#1A1A1A]/60 to-transparent"></div>
             </div>
-        </div>
-    </section>
 
-    <!-- Quick Benefits -->
-    <section class="py-20 bg-[#0a0a0a]">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 bg-[#121212] rounded-2xl border border-white/5 hover:border-[#00C853]/30 transition group">
-                    <div class="w-14 h-14 bg-[#00C853]/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i data-lucide="banknote" class="text-[#00C853] w-8 h-8"></i>
+            <div class="relative z-10 max-w-7xl mx-auto px-4 w-full grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 mb-6">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-[#D4AF37]"></i>
+                        <span class="text-xs font-black uppercase tracking-[0.2em]">test_domain_final.com Exclusive</span>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Natychmiastowe Wypłaty</h3>
-                    <p class="text-gray-400 leading-relaxed">Nie czekaj na swoje wygrane. Procesujemy wypłaty w mniej niż 15 minut przez krypto i e-portfele.</p>
+                    <h1 class="text-5xl md:text-7xl lg:text-8xl font-black italic leading-[0.9] mb-6">
+                        WIN BIG AT <br><span class="gold-text italic">LUXESPIN</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-xl mx-auto lg:mx-0">
+                        Experience the gold standard of online gaming at test_domain_final.com. Get instant access to 4,000+ slots and elite live dealer tables.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="https://afflink.com?utm-source-test=20bet" class="w-full sm:w-auto gold-gradient text-black px-10 py-5 rounded-2xl font-black text-xl uppercase tracking-tighter btn-shadow hover:scale-105 transition-transform flex items-center justify-center gap-2">
+                            Claim €500 Bonus + 200 FS
+                        </a>
+                    </div>
+                    <p class="mt-4 text-[10px] text-gray-500 uppercase tracking-widest">*T&Cs Apply. New players only. Min dep. €20. Wagering 35x.</p>
+                    
+                    <div class="mt-12 flex items-center justify-center lg:justify-start gap-8 opacity-60 grayscale hover:grayscale-0 transition-all">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/MGA_Logo.svg/1200px-MGA_Logo.svg.png" alt="MGA" class="h-6">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                        <span class="font-bold text-sm">SSL SECURED</span>
+                    </div>
                 </div>
-                <div class="p-8 bg-[#121212] rounded-2xl border border-white/5 hover:border-[#00C853]/30 transition group">
-                    <div class="w-14 h-14 bg-[#00C853]/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i data-lucide="trophy" class="text-[#00C853] w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Codzienne Turnieje</h3>
-                    <p class="text-gray-400 leading-relaxed">Walcz o udział w tygodniowej puli nagród €50,000 w naszych turniejach slotów i kasyna na żywo.</p>
-                </div>
-                <div class="p-8 bg-[#121212] rounded-2xl border border-white/5 hover:border-[#00C853]/30 transition group">
-                    <div class="w-14 h-14 bg-[#00C853]/10 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
-                        <i data-lucide="headset" class="text-[#00C853] w-8 h-8"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-3">Wsparcie VIP 24/7</h3>
-                    <p class="text-gray-400 leading-relaxed">Nasz dedykowany zespół wsparcia jest dostępny całą dobę przez czat na żywo na test_domain_final.com.</p>
+
+                <div class="hidden lg:block relative">
+                    <div class="absolute -inset-4 gold-gradient opacity-20 blur-3xl rounded-full animate-pulse"></div>
+                    <img src="https://images.unsplash.com/photo-1518893063132-36e46dbe2428?w=800" alt="Jackpot" class="relative z-10 rounded-3xl border border-white/10 shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Games Showcase -->
-    <section id="games" class="py-20">
-        <div class="container mx-auto px-4">
+        <!-- USPs -->
+        <section class="py-12 bg-black border-y border-white/5">
+            <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center text-center gap-3">
+                    <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-[#D4AF37]"><i data-lucide="zap"></i></div>
+                    <div>
+                        <h4 class="font-bold text-sm uppercase">Instant Cashouts</h4>
+                        <p class="text-xs text-gray-500">Under 15 minutes</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center gap-3">
+                    <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-[#D4AF37]"><i data-lucide="headphones"></i></div>
+                    <div>
+                        <h4 class="font-bold text-sm uppercase">24/7 Support</h4>
+                        <p class="text-xs text-gray-500">Live chat & Email</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center gap-3">
+                    <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-[#D4AF37]"><i data-lucide="layout-grid"></i></div>
+                    <div>
+                        <h4 class="font-bold text-sm uppercase">4000+ Games</h4>
+                        <p class="text-xs text-gray-500">Top providers only</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center gap-3">
+                    <div class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-[#D4AF37]"><i data-lucide="coins"></i></div>
+                    <div>
+                        <h4 class="font-bold text-sm uppercase">Crypto Ready</h4>
+                        <p class="text-xs text-gray-500">BTC, ETH, LTC, USDT</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GAMES SECTION -->
+        <section id="games" class="py-24 max-w-7xl mx-auto px-4">
             <div class="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
                 <div>
-                    <h2 class="text-4xl font-black uppercase mb-4 italic">Lobby Gier</h2>
-                    <div class="flex gap-2">
-                        <button class="px-6 py-2 bg-[#00C853] text-black font-bold rounded-full text-sm">Top Slots</button>
-                        <button class="px-6 py-2 bg-white/5 hover:bg-white/10 font-bold rounded-full text-sm transition">Live Casino</button>
-                        <button class="px-6 py-2 bg-white/5 hover:bg-white/10 font-bold rounded-full text-sm transition">Sports</button>
+                    <h2 class="text-4xl md:text-5xl font-black uppercase italic italic mb-4">Featured <span class="gold-text">Games</span></h2>
+                    <div class="flex gap-4 border-b border-white/10">
+                        <button class="pb-4 border-b-2 border-[#D4AF37] text-[#D4AF37] font-bold uppercase text-xs tracking-widest">Slots</button>
+                        <button class="pb-4 border-b-2 border-transparent text-gray-500 font-bold uppercase text-xs tracking-widest hover:text-white transition-colors">Live Casino</button>
+                        <button class="pb-4 border-b-2 border-transparent text-gray-500 font-bold uppercase text-xs tracking-widest hover:text-white transition-colors">Jackpots</button>
                     </div>
                 </div>
-                <a href="afflink.com?utm-source-test=20bet" class="text-[#00C853] font-bold flex items-center gap-2 hover:underline">
-                    Zobacz wszystkie 3,500+ gier <i data-lucide="arrow-right" class="w-4 h-4"></i>
-                </a>
+                <div class="flex gap-2">
+                    <button id="prev-game" class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors"><i data-lucide="chevron-left"></i></button>
+                    <button id="next-game" class="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center hover:bg-white/5 transition-colors"><i data-lucide="chevron-right"></i></button>
+                </div>
             </div>
 
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-                <!-- Game 1 -->
-                <div class="game-card relative group aspect-[3/4] rounded-xl overflow-hidden bg-white/5">
-                    <img loading="lazy" src="https://images.unsplash.com/photo-1518893063132-36e46dbe2428?w=400&h=533&fit=crop" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Gates of Olympus">
-                    <div class="play-overlay absolute inset-0 bg-black/60 opacity-0 flex flex-col items-center justify-center transition-opacity duration-300">
-                        <a href="afflink.com?utm-source-test=20bet" class="bg-[#00C853] text-black font-black px-6 py-3 rounded-full uppercase text-sm mb-2">Graj Teraz</a>
-                        <a href="afflink.com?utm-source-test=20bet" class="text-white text-xs font-bold uppercase hover:underline">Demo Mode</a>
+            <div id="game-carousel" class="flex gap-6 overflow-x-auto snap-x snap-mandatory hide-scrollbar pb-8">
+                <!-- Game Card 1 -->
+                <div class="min-w-[280px] md:min-w-[300px] snap-start group game-card relative overflow-hidden rounded-2xl bg-white/5 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=400&h=500&fit=crop" alt="Game" class="w-full aspect-[4/5] object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="play-overlay absolute inset-0 bg-black/60 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+                        <a href="https://afflink.com?utm-source-test=20bet" class="gold-gradient text-black font-black px-8 py-3 rounded-full uppercase text-sm mb-2">Play Now</a>
+                        <a href="https://afflink.com?utm-source-test=20bet" class="text-white font-bold text-xs uppercase hover:underline">Demo</a>
                     </div>
                     <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
-                        <p class="font-bold text-sm">Gates of Olympus</p>
-                        <p class="text-[10px] text-[#00C853] font-bold uppercase">Pragmatic Play</p>
+                        <p class="font-black uppercase text-sm">Gates of Olympus</p>
+                        <p class="text-[10px] text-gray-400 uppercase tracking-widest">Pragmatic Play</p>
                     </div>
                 </div>
-                <!-- Game 2 -->
-                <div class="game-card relative group aspect-[3/4] rounded-xl overflow-hidden bg-white/5">
-                    <img loading="lazy" src="https://images.unsplash.com/photo-1605870445919-838d190e8e1b?w=400&h=533&fit=crop" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Sweet Bonanza">
-                    <div class="play-overlay absolute inset-0 bg-black/60 opacity-0 flex flex-col items-center justify-center transition-opacity duration-300">
-                        <a href="afflink.com?utm-source-test=20bet" class="bg-[#00C853] text-black font-black px-6 py-3 rounded-full uppercase text-sm mb-2">Graj Teraz</a>
-                        <a href="afflink.com?utm-source-test=20bet" class="text-white text-xs font-bold uppercase hover:underline">Demo Mode</a>
+                <!-- Game Card 2 -->
+                <div class="min-w-[280px] md:min-w-[300px] snap-start group game-card relative overflow-hidden rounded-2xl bg-white/5 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1606167668584-78701c57f13d?w=400&h=500&fit=crop" alt="Game" class="w-full aspect-[4/5] object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="play-overlay absolute inset-0 bg-black/60 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+                        <a href="https://afflink.com?utm-source-test=20bet" class="gold-gradient text-black font-black px-8 py-3 rounded-full uppercase text-sm mb-2">Play Now</a>
                     </div>
                     <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
-                        <p class="font-bold text-sm">Sweet Bonanza</p>
-                        <p class="text-[10px] text-[#00C853] font-bold uppercase">Pragmatic Play</p>
+                        <p class="font-black uppercase text-sm">Sweet Bonanza</p>
+                        <p class="text-[10px] text-gray-400 uppercase tracking-widest">Pragmatic Play</p>
                     </div>
                 </div>
-                <!-- Game 3 -->
-                <div class="game-card relative group aspect-[3/4] rounded-xl overflow-hidden bg-white/5">
-                    <img loading="lazy" src="https://images.unsplash.com/photo-1596838132731-dd9d59058155?w=400&h=533&fit=crop" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Book of Dead">
-                    <div class="play-overlay absolute inset-0 bg-black/60 opacity-0 flex flex-col items-center justify-center transition-opacity duration-300">
-                        <a href="afflink.com?utm-source-test=20bet" class="bg-[#00C853] text-black font-black px-6 py-3 rounded-full uppercase text-sm mb-2">Graj Teraz</a>
-                        <a href="afflink.com?utm-source-test=20bet" class="text-white text-xs font-bold uppercase hover:underline">Demo Mode</a>
+                <!-- Game Card 3 -->
+                <div class="min-w-[280px] md:min-w-[300px] snap-start group game-card relative overflow-hidden rounded-2xl bg-white/5 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1518893063132-36e46dbe2428?w=400&h=500&fit=crop" alt="Game" class="w-full aspect-[4/5] object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="play-overlay absolute inset-0 bg-black/60 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+                        <a href="https://afflink.com?utm-source-test=20bet" class="gold-gradient text-black font-black px-8 py-3 rounded-full uppercase text-sm mb-2">Play Now</a>
                     </div>
                     <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
-                        <p class="font-bold text-sm">Book of Dead</p>
-                        <p class="text-[10px] text-[#00C853] font-bold uppercase">Play'n GO</p>
+                        <p class="font-black uppercase text-sm">Book of Dead</p>
+                        <p class="text-[10px] text-gray-400 uppercase tracking-widest">Play'n GO</p>
                     </div>
                 </div>
-                <!-- Game 4 -->
-                <div class="game-card relative group aspect-[3/4] rounded-xl overflow-hidden bg-white/5">
-                    <img loading="lazy" src="https://images.unsplash.com/photo-1541278107931-e006523892df?w=400&h=533&fit=crop" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="Lightning Roulette">
-                    <div class="play-overlay absolute inset-0 bg-black/60 opacity-0 flex flex-col items-center justify-center transition-opacity duration-300">
-                        <a href="afflink.com?utm-source-test=20bet" class="bg-[#00C853] text-black font-black px-6 py-3 rounded-full uppercase text-sm mb-2">Graj Teraz</a>
-                        <a href="afflink.com?utm-source-test=20bet" class="text-white text-xs font-bold uppercase hover:underline">Live Lobby</a>
+                <!-- Game Card 4 -->
+                <div class="min-w-[280px] md:min-w-[300px] snap-start group game-card relative overflow-hidden rounded-2xl bg-white/5 border border-white/10">
+                    <img src="https://images.unsplash.com/photo-1541278107931-e006523892df?w=400&h=500&fit=crop" alt="Game" class="w-full aspect-[4/5] object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="play-overlay absolute inset-0 bg-black/60 flex flex-col items-center justify-center opacity-0 transition-opacity duration-300">
+                        <a href="https://afflink.com?utm-source-test=20bet" class="gold-gradient text-black font-black px-8 py-3 rounded-full uppercase text-sm mb-2">Play Now</a>
                     </div>
                     <div class="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black to-transparent">
-                        <p class="font-bold text-sm">Lightning Roulette</p>
-                        <p class="text-[10px] text-[#00C853] font-bold uppercase">Evolution</p>
+                        <p class="font-black uppercase text-sm">Sugar Rush</p>
+                        <p class="text-[10px] text-gray-400 uppercase tracking-widest">Pragmatic Play</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Bonus Details Section -->
-    <section id="bonuses" class="py-20 bg-[#0a0a0a]">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black uppercase italic mb-4">Ekskluzywne Nagrody</h2>
-                <p class="text-gray-400">Zwiększ swój kapitał dzięki naszym najlepszym promocjom na rynku.</p>
-            </div>
-
-            <div class="max-w-4xl mx-auto space-y-4">
-                <!-- Accordion 1 -->
-                <div class="bg-[#121212] rounded-2xl border border-white/10 overflow-hidden">
-                    <button class="accordion-header w-full flex items-center justify-between p-6 text-left" onclick="toggleAccordion(this)">
-                        <div class="flex items-center gap-4">
-                            <span class="w-10 h-10 bg-[#00C853] text-black rounded-full flex items-center justify-center font-black">1</span>
-                            <div>
-                                <h4 class="font-bold text-lg leading-tight">Pakiet Powitalny: Do €1,500 + 200 FS</h4>
-                                <p class="text-xs text-gray-500 uppercase font-bold tracking-widest mt-1">Pierwsze 3 depozyty</p>
-                            </div>
-                        </div>
-                        <i data-lucide="chevron-down" class="transition-transform duration-300"></i>
-                    </button>
-                    <div class="accordion-content px-6 pb-6">
-                        <div class="grid md:grid-cols-2 gap-8 pt-4 border-t border-white/5">
-                            <div>
-                                <ul class="space-y-3 text-sm text-gray-300">
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="text-[#00C853] w-4 h-4"></i> 1st Deposit: 100% up to €500 + 100 FS</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="text-[#00C853] w-4 h-4"></i> 2nd Deposit: 50% up to €500 + 50 FS</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="text-[#00C853] w-4 h-4"></i> 3rd Deposit: 75% up to €500 + 50 FS</li>
-                                </ul>
-                            </div>
-                            <div class="flex flex-col justify-between">
-                                <p class="text-xs text-gray-500 leading-relaxed mb-4">Wagering requirement: 35x. Max bet with bonus: €5. Minimum deposit: €20. Spins credited on "Luxe Gold" slot.</p>
-                                <a href="afflink.com?utm-source-test=20bet" class="bg-white text-black font-black py-3 rounded-lg text-center uppercase text-sm hover:bg-[#00C853] transition">Odbierz Pakiet</a>
-                            </div>
-                        </div>
-                    </div>
+        <!-- BONUSES SECTION -->
+        <section id="bonuses" class="py-24 bg-black/50">
+            <div class="max-w-4xl mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-black uppercase italic mb-4">Elite <span class="gold-text">Rewards</span></h2>
+                    <p class="text-gray-400">Maximize your winning potential at test_domain_final.com with our bespoke bonus packages.</p>
                 </div>
 
-                <!-- Accordion 2 -->
-                <div class="bg-[#121212] rounded-2xl border border-white/10 overflow-hidden">
-                    <button class="accordion-header w-full flex items-center justify-between p-6 text-left" onclick="toggleAccordion(this)">
-                        <div class="flex items-center gap-4">
-                            <span class="w-10 h-10 bg-[#00C853] text-black rounded-full flex items-center justify-center font-black">2</span>
-                            <div>
-                                <h4 class="font-bold text-lg leading-tight">Weekly Cashback: Up to 20%</h4>
-                                <p class="text-xs text-gray-500 uppercase font-bold tracking-widest mt-1">Co poniedziałek</p>
-                            </div>
-                        </div>
-                        <i data-lucide="chevron-down" class="transition-transform duration-300"></i>
-                    </button>
-                    <div class="accordion-content px-6 pb-6">
-                        <div class="pt-4 border-t border-white/5">
-                            <p class="text-gray-300 mb-4">Get up to 20% of your net losses back every Monday as real cash at test_domain_final.com. No wagering requirements on cashback for VIP Level 4+.</p>
-                            <a href="afflink.com?utm-source-test=20bet" class="inline-block bg-[#00C853] text-black font-black px-8 py-3 rounded-lg uppercase text-sm">Sprawdź Status</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Accordion 3 -->
-                <div class="bg-[#121212] rounded-2xl border border-white/10 overflow-hidden">
-                    <button class="accordion-header w-full flex items-center justify-between p-6 text-left" onclick="toggleAccordion(this)">
-                        <div class="flex items-center gap-4">
-                            <span class="w-10 h-10 bg-[#00C853] text-black rounded-full flex items-center justify-center font-black">3</span>
-                            <div>
-                                <h4 class="font-bold text-lg leading-tight">Crypto Boost: 10% Extra</h4>
-                                <div class="flex items-center gap-2 mt-1">
-                                    <span class="bg-blue-600 text-[10px] font-bold px-1.5 py-0.5 rounded">HOT</span>
-                                    <p class="text-xs text-gray-500 uppercase font-bold tracking-widest">Nielimitowane</p>
+                <div class="space-y-4">
+                    <!-- Bonus 1 -->
+                    <div class="bonus-card group border border-white/10 rounded-2xl overflow-hidden bg-white/5 hover:border-[#D4AF37]/50 transition-colors">
+                        <button class="w-full p-6 flex items-center justify-between text-left bonus-toggle">
+                            <div class="flex items-center gap-6">
+                                <div class="w-16 h-16 rounded-xl gold-gradient flex items-center justify-center text-black font-black text-2xl italic">1st</div>
+                                <div>
+                                    <h3 class="text-xl font-black uppercase">Welcome Bonus Pack</h3>
+                                    <p class="text-[#D4AF37] font-bold">100% up to €500 + 200 Free Spins</p>
                                 </div>
                             </div>
+                            <i data-lucide="chevron-down" class="chevron-icon transition-transform duration-300"></i>
+                        </button>
+                        <div class="bonus-content px-6 md:px-28">
+                            <div class="pb-6 text-sm text-gray-400 space-y-4">
+                                <p>Double your first deposit and get 20 free spins every day for 10 days on top-rated slots.</p>
+                                <ul class="grid sm:grid-cols-2 gap-2 text-xs font-bold uppercase tracking-wider">
+                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Min Deposit: €20</li>
+                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Wagering: 35x</li>
+                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Max Bet: €5</li>
+                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Valid: 30 Days</li>
+                                </ul>
+                                <a href="https://afflink.com?utm-source-test=20bet" class="inline-block gold-gradient text-black px-8 py-3 rounded-full font-black uppercase text-sm mt-4">Claim Now</a>
+                            </div>
                         </div>
-                        <i data-lucide="chevron-down" class="transition-transform duration-300"></i>
-                    </button>
-                    <div class="accordion-content px-6 pb-6">
-                        <div class="pt-4 border-t border-white/5">
-                            <p class="text-gray-300 mb-4">Deposit using BTC, ETH, LTC, or USDT and receive an automatic 10% top-up on every single deposit at test_domain_final.com.</p>
-                            <a href="afflink.com?utm-source-test=20bet" class="inline-block bg-[#00C853] text-black font-black px-8 py-3 rounded-lg uppercase text-sm">Depozyt Krypto</a>
+                    </div>
+
+                    <!-- Bonus 2 -->
+                    <div class="bonus-card group border border-white/10 rounded-2xl overflow-hidden bg-white/5 hover:border-[#D4AF37]/50 transition-colors">
+                        <button class="w-full p-6 flex items-center justify-between text-left bonus-toggle">
+                            <div class="flex items-center gap-6">
+                                <div class="w-16 h-16 rounded-xl bg-white/10 flex items-center justify-center text-white font-black text-2xl italic">20%</div>
+                                <div>
+                                    <h3 class="text-xl font-black uppercase">Weekly Cashback</h3>
+                                    <p class="text-[#D4AF37] font-bold">Get up to €2,000 every Monday</p>
+                                </div>
+                            </div>
+                            <i data-lucide="chevron-down" class="chevron-icon transition-transform duration-300"></i>
+                        </button>
+                        <div class="bonus-content px-6 md:px-28">
+                            <div class="pb-6 text-sm text-gray-400 space-y-4">
+                                <p>We've got your back. Get a percentage of your weekly losses back as real cash every single week.</p>
+                                <a href="https://afflink.com?utm-source-test=20bet" class="inline-block gold-gradient text-black px-8 py-3 rounded-full font-black uppercase text-sm mt-4">Learn More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Payment Methods -->
-    <section id="payments" class="py-16 border-y border-white/5">
-        <div class="container mx-auto px-4">
-            <div class="flex flex-col md:flex-row items-center justify-between gap-10">
-                <div class="max-w-sm text-center md:text-left">
-                    <h2 class="text-3xl font-black uppercase italic mb-2">Szybko i Bezpiecznie</h2>
-                    <p class="text-gray-500 text-sm">Obsługujemy ponad 20 lokalnych i globalnych metod płatności bez żadnych opłat.</p>
-                </div>
-                <div class="flex flex-wrap justify-center gap-8 opacity-40 grayscale hover:opacity-100 hover:grayscale-0 transition duration-500">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png" class="h-6" alt="Visa">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png" class="h-8" alt="Mastercard">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/1200px-PayPal.svg.png" class="h-6" alt="PayPal">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Bitcoin.svg/1200px-Bitcoin.svg.png" class="h-8" alt="Bitcoin">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Skrill_logo.svg/1280px-Skrill_logo.svg.png" class="h-6" alt="Skrill">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Apple_Pay_logo.svg/1200px-Apple_Pay_logo.svg.png" class="h-8" alt="Apple Pay">
+        <!-- PAYMENTS -->
+        <section class="py-16 border-y border-white/5">
+            <div class="max-w-7xl mx-auto px-4 text-center">
+                <h3 class="text-xs font-black uppercase tracking-[0.3em] text-gray-500 mb-8">Fast & Secure Payments at test_domain_final.com</h3>
+                <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-40 grayscale">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="h-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="h-10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="h-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin" class="h-8">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Skrill_logo.svg" alt="Skrill" class="h-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Neteller-logo.svg" alt="Neteller" class="h-6">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Social Proof -->
-    <section class="py-20">
-        <div class="container mx-auto px-4">
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div>
-                    <h2 class="text-5xl font-black italic uppercase leading-tight mb-6">Dołącz do <span class="text-[#00C853]">Elity</span></h2>
-                    <p class="text-xl text-gray-400 mb-8 leading-relaxed">Ponad 15,000 graczy ufa test_domain_final.com. Zobacz, co mówią o nas nasi użytkownicy.</p>
-                    <div class="flex items-center gap-4 p-6 bg-white/5 rounded-2xl border-l-4 border-[#00C853]">
-                        <div class="flex-shrink-0">
-                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#00C853] to-green-900 flex items-center justify-center font-bold">M</div>
-                        </div>
-                        <div>
-                            <div class="flex gap-1 mb-1">
-                                <i data-lucide="star" class="w-3 h-3 fill-[#00C853] text-[#00C853]"></i>
-                                <i data-lucide="star" class="w-3 h-3 fill-[#00C853] text-[#00C853]"></i>
-                                <i data-lucide="star" class="w-3 h-3 fill-[#00C853] text-[#00C853]"></i>
-                                <i data-lucide="star" class="w-3 h-3 fill-[#00C853] text-[#00C853]"></i>
-                                <i data-lucide="star" class="w-3 h-3 fill-[#00C853] text-[#00C853]"></i>
-                            </div>
-                            <p class="text-sm italic">"Najlepsza prędkość wypłat, jakiej kiedykolwiek doświadczyłem. Wygrałem €1,200 i środki były na Skrill w 10 minut!"</p>
-                            <p class="text-xs font-bold mt-2 uppercase text-gray-500">— Marco R., Zweryfikowany Gracz</p>
-                        </div>
+        <!-- SOCIAL PROOF -->
+        <section class="py-24 max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                    <div class="flex gap-1 text-[#D4AF37] mb-4">
+                        <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                        <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                        <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                        <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                        <i data-lucide="star" class="fill-current w-4 h-4"></i>
                     </div>
-                </div>
-                <div class="bg-[#121212] p-8 rounded-3xl border border-white/10 relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-4 bg-[#00C853] text-black font-black text-xs uppercase italic">Ostatnie Wygrane</div>
-                    <div class="space-y-6">
-                        <div class="flex items-center justify-between border-b border-white/5 pb-4">
-                            <div class="flex items-center gap-3">
-                                <div class="w-2 h-2 rounded-full bg-[#00C853]"></div>
-                                <span class="text-sm font-bold">Anna***</span>
-                            </div>
-                            <span class="text-sm text-gray-400 italic">Sweet Bonanza</span>
-                            <span class="text-[#00C853] font-black">€432.50</span>
-                        </div>
-                        <div class="flex items-center justify-between border-b border-white/5 pb-4">
-                            <div class="flex items-center gap-3">
-                                <div class="w-2 h-2 rounded-full bg-[#00C853]"></div>
-                                <span class="text-sm font-bold">Player99</span>
-                            </div>
-                            <span class="text-sm text-gray-400 italic">Lightning Roulette</span>
-                            <span class="text-[#00C853] font-black">€1,050.00</span>
-                        </div>
-                        <div class="flex items-center justify-between border-b border-white/5 pb-4">
-                            <div class="flex items-center gap-3">
-                                <div class="w-2 h-2 rounded-full bg-[#00C853]"></div>
-                                <span class="text-sm font-bold">Kev_S</span>
-                            </div>
-                            <span class="text-sm text-gray-400 italic">Big Bass Splash</span>
-                            <span class="text-[#00C853] font-black">€87.20</span>
-                        </div>
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center gap-3">
-                                <div class="w-2 h-2 rounded-full bg-[#00C853]"></div>
-                                <span class="text-sm font-bold">Zoltan_X</span>
-                            </div>
-                            <span class="text-sm text-gray-400 italic">Mega Moolah</span>
-                            <span class="text-[#00C853] font-black">€12,400.00</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-[#0a0a0a] pt-20 pb-10 border-t border-white/10">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-12 mb-16">
-                <div class="col-span-1 md:col-span-2">
-                    <a href="https://test_domain_final.com" class="text-3xl font-black italic tracking-tighter text-[#00C853] mb-6 block">LUXESPIN</a>
-                    <p class="text-gray-500 text-sm max-w-md leading-relaxed mb-8">
-                        LuxeSpin to światowy lider w grach hazardowych na wysokie stawki i rozrywce kasynowej premium. Dbamy o uczciwą grę, bezpieczeństwo i odpowiedzialny hazard na test_domain_final.com.
-                    </p>
-                    <div class="flex gap-4">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/BeGambleAware_Logo.svg/1200px-BeGambleAware_Logo.svg.png" class="h-6 grayscale opacity-50" alt="BeGambleAware">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/MGA_logo.svg/1200px-MGA_logo.svg.png" class="h-6 grayscale opacity-50" alt="MGA">
-                    </div>
-                </div>
-                <div>
-                    <h5 class="font-bold uppercase text-xs tracking-widest mb-6">Platforma</h5>
-                    <ul class="space-y-4 text-sm text-gray-400">
-                        <li><a href="#games" class="hover:text-white transition">Wszystkie Gry</a></li>
-                        <li><a href="#bonuses" class="hover:text-white transition">Promocje</a></li>
-                        <li><a href="#vip" class="hover:text-white transition">Klub VIP</a></li>
-                        <li><a href="afflink.com?utm-source-test=20bet" class="hover:text-white transition">Afiliacja</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h5 class="font-bold uppercase text-xs tracking-widest mb-6">Wsparcie</h5>
-                    <ul class="space-y-4 text-sm text-gray-400">
-                        <li><a href="#" class="hover:text-white transition">Centrum Pomocy</a></li>
-                        <li><a href="#" class="hover:text-white transition">Czat na żywo</a></li>
-                        <li><a href="#" class="hover:text-white transition">Polityka Prywatności</a></li>
-                        <li><a href="#" class="hover:text-white transition">Odpowiedzialna Gra</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="border-t border-white/5 pt-10 text-center md:text-left">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                    <p class="text-[10px] text-gray-600 uppercase font-bold tracking-widest">
-                        © 2024 LUXESPIN CASINO. OPERATED BY LUXE ENTERTAINMENT LTD. DOMAIN: test_domain_final.com. LICENSE: MGA/CRP/123/2024.
-                    </p>
+                    <p class="text-gray-300 italic mb-6">"Fastest withdrawals I've ever experienced. Had my winnings in under 10 minutes!"</p>
                     <div class="flex items-center gap-4">
-                        <span class="text-[10px] border border-gray-700 px-2 py-1 rounded text-gray-600 font-bold">18+</span>
-                        <span class="text-[10px] border border-gray-700 px-2 py-1 rounded text-gray-600 font-bold">SSL</span>
-                        <span class="text-[10px] border border-gray-700 px-2 py-1 rounded text-gray-600 font-bold">RNG CERTIFIED</span>
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-blue-500"></div>
+                        <div>
+                            <p class="font-bold text-sm">Marco S.</p>
+                            <p class="text-[10px] text-gray-500 uppercase">Verified Player</p>
+                        </div>
                     </div>
                 </div>
-                <p class="mt-8 text-xs text-gray-600 max-w-4xl mx-auto text-center italic">
-                    Hazard wiąże się z ryzykiem. Prosimy o odpowiedzialną grę. Hazard może uzależniać. Jeśli Ty lub ktoś, kogo znasz, ma problem z hazardem, odwiedź BeGambleAware.org w celu uzyskania wsparcia.
+                <div class="bg-white/5 p-8 rounded-3xl border border-white/10">
+                    <div class="flex gap-1 text-[#D4AF37] mb-4">
+                        <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                        <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                        <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                        <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                        <i data-lucide="star" class="fill-current w-4 h-4"></i>
+                    </div>
+                    <p class="text-gray-300 italic mb-6">"The VIP treatment is real. My account manager is amazing and the bonuses are huge."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-br from-orange-500 to-red-500"></div>
+                        <div>
+                            <p class="font-bold text-sm">Sarah J.</p>
+                            <p class="text-[10px] text-gray-500 uppercase">Gold Member</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#D4AF37] p-8 rounded-3xl text-black flex flex-col justify-center items-center text-center">
+                    <h4 class="text-4xl font-black italic mb-2">15,000+</h4>
+                    <p class="font-bold uppercase tracking-widest text-sm mb-6">Happy Players</p>
+                    <a href="https://afflink.com?utm-source-test=20bet" class="bg-black text-white px-8 py-3 rounded-full font-black uppercase text-sm hover:scale-105 transition-transform">Join the Club</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black pt-20 pb-10 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="#" class="text-3xl font-black italic tracking-tighter flex items-center gap-2 mb-6">
+                        <span class="gold-gradient p-1 rounded text-black"><i data-lucide="crown"></i></span>
+                        LUXE<span class="gold-text">SPIN</span>
+                    </a>
+                    <p class="text-gray-500 text-sm max-w-md mb-8">
+                        LuxeSpin is the world's leading premium online casino destination, providing safe entertainment for players on test_domain_final.com.
+                    </p>
+                    <div class="flex items-center gap-6">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/MGA_Logo.svg/1200px-MGA_Logo.svg.png" alt="MGA" class="h-8 opacity-50">
+                        <span class="text-xs font-bold text-gray-600">License: MGA/CRP/123/2024</span>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="font-black uppercase text-sm tracking-widest mb-6">Explore</h5>
+                    <ul class="space-y-4 text-sm text-gray-500 font-bold uppercase">
+                        <li><a href="#" class="hover:text-[#D4AF37]">All Games</a></li>
+                        <li><a href="#" class="hover:text-[#D4AF37]">Live Dealer</a></li>
+                        <li><a href="#" class="hover:text-[#D4AF37]">Promotions</a></li>
+                        <li><a href="#" class="hover:text-[#D4AF37]">VIP Club</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-black uppercase text-sm tracking-widest mb-6">Help</h5>
+                    <ul class="space-y-4 text-sm text-gray-500 font-bold uppercase">
+                        <li><a href="#" class="hover:text-[#D4AF37]">Responsible Gaming</a></li>
+                        <li><a href="#" class="hover:text-[#D4AF37]">T&Cs</a></li>
+                        <li><a href="#" class="hover:text-[#D4AF37]">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-[#D4AF37]">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pt-10 border-t border-white/5 text-center">
+                <div class="flex justify-center gap-8 mb-8">
+                    <div class="border-2 border-white/20 text-white/20 rounded-full w-10 h-10 flex items-center justify-center font-black">18+</div>
+                    <a href="https://www.begambleaware.org" target="_blank" class="opacity-30 hover:opacity-100 transition-opacity">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/33/BeGambleAware_Logo.svg/1200px-BeGambleAware_Logo.svg.png" alt="BeGambleAware" class="h-6">
+                    </a>
+                </div>
+                <p class="text-[10px] text-gray-600 uppercase tracking-[0.2em] leading-relaxed">
+                    Gambling can be addictive. Please play responsibly. LuxeSpin test_domain_final.com is operated by Luxe Entertainment Ltd. <br>
+                    Licensed and regulated by the Malta Gaming Authority. © 2024 LuxeSpin Casino. All rights reserved.
                 </p>
             </div>
         </div>
     </footer>
 
-    <!-- Cookie Banner -->
-    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] p-4">
-        <div class="container mx-auto">
-            <div class="bg-white text-black p-6 rounded-2xl flex flex-col md:flex-row items-center justify-between gap-4 shadow-2xl">
-                <div class="flex items-center gap-4">
-                    <i data-lucide="cookie" class="text-gray-400"></i>
-                    <p class="text-sm font-medium">Używamy ciasteczek, aby poprawić Twoje doświadczenia i pokazywać odpowiednie bonusy na test_domain_final.com.</p>
-                </div>
-                <div class="flex gap-4 w-full md:w-auto">
-                    <button id="accept-cookies" class="flex-1 md:flex-none bg-black text-white px-8 py-2.5 rounded-lg font-bold text-sm hover:bg-[#00C853] hover:text-black transition">Akceptuję</button>
-                </div>
+    <!-- MOBILE BOTTOM NAV -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-black/90 backdrop-blur-lg border-t border-white/10 h-16 flex items-center justify-around z-50 px-2">
+        <a href="#" class="flex flex-col items-center gap-1 text-[#D4AF37]">
+            <i data-lucide="home" class="w-5 h-5"></i>
+            <span class="text-[10px] font-bold uppercase">Home</span>
+        </a>
+        <a href="#games" class="flex flex-col items-center gap-1 text-gray-500">
+            <i data-lucide="layout-grid" class="w-5 h-5"></i>
+            <span class="text-[10px] font-bold uppercase">Games</span>
+        </a>
+        <a href="https://afflink.com?utm-source-test=20bet" class="flex flex-col items-center -mt-8">
+            <div class="w-14 h-14 gold-gradient rounded-full flex items-center justify-center text-black shadow-lg border-4 border-[#1A1A1A]">
+                <i data-lucide="plus-circle" class="w-8 h-8"></i>
             </div>
-        </div>
+            <span class="text-[10px] font-bold uppercase mt-1 text-[#D4AF37]">Join</span>
+        </a>
+        <a href="#bonuses" class="flex flex-col items-center gap-1 text-gray-500">
+            <i data-lucide="gift" class="w-5 h-5"></i>
+            <span class="text-[10px] font-bold uppercase">Promos</span>
+        </a>
+        <button id="mobile-menu-trigger" class="flex flex-col items-center gap-1 text-gray-500">
+            <i data-lucide="more-horizontal" class="w-5 h-5"></i>
+            <span class="text-[10px] font-bold uppercase">More</span>
+        </button>
     </div>
 
-    <!-- Scripts -->
     <script>
-        // Initialize Lucide Icons
         lucide.createIcons();
 
-        // Hamburger Menu Toggle
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
+        const closeMenu = document.getElementById('close-menu');
+        const mobileMenuTrigger = document.getElementById('mobile-menu-trigger');
 
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-            const icon = menuBtn.querySelector('i');
-            if (mobileMenu.classList.contains('hidden')) {
-                icon.setAttribute('data-lucide', 'menu');
-            } else {
-                icon.setAttribute('data-lucide', 'x');
-            }
-            lucide.createIcons();
+        const toggleMenu = () => mobileMenu.classList.toggle('hidden');
+        
+        menuBtn.addEventListener('click', toggleMenu);
+        closeMenu.addEventListener('click', toggleMenu);
+        mobileMenuTrigger.addEventListener('click', toggleMenu);
+
+        document.querySelectorAll('.mobile-link').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
         });
 
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-                menuBtn.querySelector('i').setAttribute('data-lucide', 'menu');
-                lucide.createIcons();
-            });
-        });
-
-        // Cookie Banner
         const cookieBanner = document.getElementById('cookie-banner');
         const acceptBtn = document.getElementById('accept-cookies');
         
-        if (localStorage.getItem('cookiesAccepted')) {
+        if(localStorage.getItem('cookiesAccepted')) {
             cookieBanner.style.display = 'none';
         }
 
         acceptBtn.addEventListener('click', () => {
-            cookieBanner.style.transform = 'translateY(100%)';
-            cookieBanner.style.transition = 'transform 0.5s ease-in';
+            cookieBanner.style.display = 'none';
             localStorage.setItem('cookiesAccepted', 'true');
-            setTimeout(() => { cookieBanner.style.display = 'none'; }, 500);
         });
 
-        // Accordion Logic
-        function toggleAccordion(button) {
-            const content = button.nextElementSibling;
-            const icon = button.querySelector('[data-lucide="chevron-down"]');
-            
-            document.querySelectorAll('.accordion-content').forEach(item => {
-                if (item !== content) {
-                    item.classList.remove('active');
-                    const otherIcon = item.previousElementSibling.querySelector('[data-lucide="chevron-down"]');
-                    if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
                 }
             });
+        });
 
-            content.classList.toggle('active');
-            if (content.classList.contains('active')) {
-                icon.style.transform = 'rotate(180deg)';
-            } else {
-                icon.style.transform = 'rotate(0deg)';
-            }
-        }
+        const carousel = document.getElementById('game-carousel');
+        const nextBtn = document.getElementById('next-game');
+        const prevBtn = document.getElementById('prev-game');
 
-        // Header Scroll Effect
+        nextBtn.addEventListener('click', () => {
+            carousel.scrollBy({ left: 320, behavior: 'smooth' });
+        });
+
+        prevBtn.addEventListener('click', () => {
+            carousel.scrollBy({ left: -320, behavior: 'smooth' });
+        });
+
+        document.querySelectorAll('.bonus-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const card = button.parentElement;
+                const isActive = card.classList.contains('active');
+                document.querySelectorAll('.bonus-card').forEach(c => c.classList.remove('active'));
+                if (!isActive) {
+                    card.classList.add('active');
+                }
+            });
+        });
+
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 50) {
-                header.classList.add('bg-[#121212]');
-                header.classList.remove('bg-[#121212]/90');
+                header.classList.add('bg-black');
+                header.classList.remove('bg-black/80');
             } else {
-                header.classList.remove('bg-[#121212]');
-                header.classList.add('bg-[#121212]/90');
+                header.classList.remove('bg-black');
+                header.classList.add('bg-black/80');
             }
         });
     </script>
