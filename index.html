@@ -3,418 +3,588 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>20Bet Casino: Πλήρης Οδηγός και Κριτική για την Ελλάδα</title>
-    <meta name="description" content="Ανακαλύψτε το 20Bet Casino στην Ελλάδα. Πλήρης οδηγός για μπόνους εγγραφής, παιχνίδια, φρουτάκια, αθλητικό στοίχημα και ασφαλείς αναλήψεις κερδών.">
+    <title>20Bet Casino: Πλήρης Κριτική & Μπόνους στην Ελλάδα</title>
+    <meta name="description" content="Το 20bet casino είναι μια δυναμική πλατφόρμα με πάνω από 4000 παιχνίδια, υποστήριξη κρυπτονομισμάτων και άδεια Curacao. Διαβάστε την αναλυτική κριτική μας.">
+    
+    <link rel="canonical" href="https://test_domain_final.com" />
+    <link rel="alternate" hreflang="pl" href="https://test_domain_final.com" />
+
+    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00C853',
+                        secondary: '#00E676',
+                        dark: '#121212',
+                        surface: '#1E1E1E',
+                        accent: '#2D2D2D',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #0F0F0F; color: #FFFFFF; }
-        .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #F1D27B 50%, #B8860B 100%); }
-        .gold-text { background: linear-gradient(135deg, #D4AF37 0%, #F1D27B 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .game-card:hover .play-overlay { opacity: 1; }
-        .btn-animate { transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-        .btn-animate:hover { transform: scale(1.05); }
-        .shimmer { position: relative; overflow: hidden; }
-        .shimmer::after { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent); transform: rotate(45deg); animation: shimmer 3s infinite; }
-        @keyframes shimmer { 0% { transform: translateX(-100%) rotate(45deg); } 100% { transform: translateX(100%) rotate(45deg); } }
-        .content-section h2 { font-size: 2.25rem; font-weight: 900; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: -0.025em; color: #F1D27B; }
-        .content-section h3 { font-size: 1.5rem; font-weight: 800; margin-bottom: 1rem; color: #FFFFFF; }
-        .content-section p { margin-bottom: 1.25rem; color: #D1D5DB; line-height: 1.8; }
-        .content-section ul, .content-section ol { margin-bottom: 1.5rem; padding-left: 1.5rem; color: #D1D5DB; }
-        .content-section li { margin-bottom: 0.5rem; }
-        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .glass {
+            background: rgba(30, 30, 30, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(18,18,18,0.9) 0%, rgba(18,18,18,1) 100%), url('https://images.unsplash.com/photo-1596838132731-dd9651557c5a?w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .game-card:hover .game-overlay {
+            opacity: 1;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .prose h2 { color: #00C853; font-weight: 900; font-style: italic; text-transform: uppercase; font-size: 1.875rem; margin-top: 2rem; margin-bottom: 1rem; }
+        .prose h3 { color: white; font-weight: 700; font-size: 1.5rem; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        .prose p { color: #9CA3AF; margin-bottom: 1rem; line-height: 1.625; }
+        .prose strong { color: white; }
+        .prose ul, .prose ol { margin-bottom: 1rem; padding-left: 1.5rem; color: #9CA3AF; }
+        .prose li { margin-bottom: 0.5rem; }
+        .prose ol { list-style-type: decimal; }
+        .prose ul { list-style-type: disc; }
     </style>
+
+    <!-- Schema Markup -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Review",
       "itemReviewed": {
-        "@type": "GameServer",
-        "name": "20Bet Casino"
+        "@type": "Casino",
+        "name": "20Bet Casino",
+        "image": "https://images.unsplash.com/photo-1596838132731-dd9651557c5a?w=400",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Curacao"
+        }
       },
       "reviewRating": {
         "@type": "Rating",
-        "ratingValue": "4.8",
+        "ratingValue": "4.9",
         "bestRating": "5"
       },
       "author": {
         "@type": "Organization",
-        "name": "LuxeCasino Reviews"
-      }
+        "name": "20Bet Casino Experts"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "20Bet Casino Online Greece"
+      },
+      "description": "Η αναζήτηση μιας αξιόπιστης πλατφόρμας για online τυχερά παιχνίδια μπορεί να είναι δύσκολη. Το 20bet casino είναι μια δυναμική πλατφόρμα που συνδυάζει casino και στοίχημα."
     }
     </script>
 </head>
-<body class="antialiased">
+<body class="bg-dark text-white font-sans antialiased">
 
     <!-- Cookie Banner -->
-    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] p-4 md:p-6 glass-card border-t border-white/20 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p class="text-sm text-gray-300 max-w-3xl">Το 20Bet Casino χρησιμοποιεί cookies για να εξασφαλίσει την καλύτερη δυνατή εμπειρία. Συνεχίζοντας την περιήγηση, συμφωνείτε με τη χρήση τους. <a href="#" class="underline text-white">Μάθετε περισσότερα</a>.</p>
-        <button id="accept-cookies" class="px-8 py-2 bg-white text-black font-bold rounded-full hover:bg-gray-200 transition-colors whitespace-nowrap">Αποδοχή</button>
-    </div>
-
-    <!-- Header -->
-    <header class="fixed top-0 w-full z-50 glass-card border-b border-white/10 px-4 md:px-8 py-3 flex items-center justify-between">
-        <div class="flex items-center gap-8">
-            <a href="#" class="text-2xl font-black tracking-tighter flex items-center gap-2">
-                <span class="gold-gradient p-1.5 rounded-lg text-black"><i data-lucide="crown" class="w-6 h-6"></i></span>
-                20BET<span class="gold-text">CASINO</span>
-            </a>
-            <nav class="hidden lg:flex items-center gap-6 font-medium text-sm uppercase tracking-wider text-gray-400">
-                <a href="#games" class="hover:text-white transition-colors">Παιχνίδια</a>
-                <a href="#promotions" class="hover:text-white transition-colors">Προσφορές</a>
-                <a href="#payments" class="hover:text-white transition-colors">Πληρωμές</a>
-                <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
-            </nav>
-        </div>
-        
-        <div class="flex items-center gap-4">
-            <div class="hidden sm:flex items-center gap-2 mr-4">
-                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055833.png" alt="18+" class="w-6 h-6 opacity-70">
-                <span class="text-[10px] text-gray-500 uppercase leading-none">Παίξτε<br>Υπεύθυνα</span>
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-[100] p-4 lg:p-6">
+        <div class="max-w-4xl mx-auto glass rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-4 shadow-2xl border-primary/20">
+            <div class="text-sm text-gray-300 text-center md:text-left">
+                Χρησιμοποιούμε cookies για να βελτιώσουμε την εμπειρία σας και να σας δείξουμε σχετικές προσφορές. Συνεχίζοντας, συμφωνείτε με την πολιτική μας.
             </div>
-            <a href="afflink.com?utm-source-test=20bet" class="text-sm font-bold hover:text-white transition-colors hidden md:block">Είσοδος</a>
-            <a href="afflink.com?utm-source-test=20bet" class="gold-gradient px-6 py-2.5 rounded-full text-black font-black text-sm uppercase tracking-tight btn-animate shimmer">Εγγραφη</a>
-            <button id="menu-btn" class="lg:hidden p-2 text-white"><i data-lucide="menu"></i></button>
+            <button id="accept-cookies" class="bg-primary hover:bg-secondary text-dark font-bold py-3 px-8 rounded-xl transition-all transform hover:scale-105 whitespace-nowrap">
+                Αποδοχή & Συνέχεια
+            </button>
         </div>
-    </header>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-black hidden flex flex-col items-center justify-center gap-8 text-2xl font-bold uppercase">
-        <button id="close-menu" class="absolute top-6 right-6"><i data-lucide="x" class="w-8 h-8"></i></button>
-        <a href="#games" class="mobile-link">Παιχνίδια</a>
-        <a href="#promotions" class="mobile-link">Προσφορές</a>
-        <a href="#payments" class="mobile-link">Πληρωμές</a>
-        <a href="afflink.com?utm-source-test=20bet" class="gold-gradient px-12 py-4 rounded-full text-black">Εγγραφη Τωρα</a>
     </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <div class="bg-primary p-1.5 rounded-lg">
+                        <i data-lucide="clover" class="w-8 h-8 text-dark"></i>
+                    </div>
+                    <span class="text-2xl font-black tracking-tighter uppercase italic">20<span class="text-primary">Bet</span></span>
+                </div>
+
+                <!-- Desktop Nav -->
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#games" class="hover:text-primary font-medium transition-colors">Παιχνίδια</a>
+                    <a href="#bonuses" class="hover:text-primary font-medium transition-colors">Προσφορές</a>
+                    <a href="#payments" class="hover:text-primary font-medium transition-colors">Πληρωμές</a>
+                    <div class="h-6 w-px bg-white/10"></div>
+                    <div class="flex items-center gap-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/18plus.svg" alt="18+" class="w-8 h-8">
+                        <a href="afflink.com?utm-source-test=20bet" class="bg-primary hover:bg-secondary text-dark font-bold py-3 px-6 rounded-xl transition-all">ΕΓΓΡΑΦΗ</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-btn" class="md:hidden text-white">
+                    <i data-lucide="menu" class="w-8 h-8"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-surface border-b border-white/10 p-6 flex flex-col gap-6 animate-in slide-in-from-top">
+            <a href="#games" class="text-xl font-bold">Παιχνίδια</a>
+            <a href="#bonuses" class="text-xl font-bold">Προσφορές</a>
+            <a href="#payments" class="text-xl font-bold">Πληρωμές</a>
+            <a href="afflink.com?utm-source-test=20bet" class="bg-primary text-dark text-center font-bold py-4 rounded-xl">ΕΓΓΡΑΦΗ</a>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1518893063132-36e46dbe2428?q=80&w=1920" alt="Casino Background" class="w-full h-full object-cover opacity-30">
-            <div class="absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-transparent to-transparent"></div>
-        </div>
-
-        <div class="container mx-auto px-4 md:px-8 relative z-10">
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 hero-gradient overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8 relative z-10">
             <div class="max-w-4xl">
-                <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-3 py-1 rounded-full mb-6">
-                    <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                    <span class="text-xs font-bold uppercase tracking-widest">Νόμιμο Καζίνο στην Ελλάδα</span>
+                <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
+                    <span class="relative flex h-3 w-3">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-primary"></span>
+                    </span>
+                    <span class="text-sm font-bold tracking-wide uppercase">Online Τώρα: 12,482 Παίκτες</span>
                 </div>
-                <h1 class="text-4xl md:text-7xl font-black mb-6 leading-[0.9] tracking-tighter">
-                    20BET CASINO: <br><span class="gold-text">ΠΛΗΡΗΣ ΟΔΗΓΟΣ & ΚΡΙΤΙΚΗ</span>
+                
+                <h1 class="text-4xl lg:text-7xl font-black mb-6 leading-tight uppercase italic">
+                    20Bet Casino: <span class="text-primary tracking-normal">Πλήρης Κριτική & Μπόνους</span> στην Ελλάδα
                 </h1>
-                <p class="text-lg md:text-2xl text-gray-300 mb-8 max-w-2xl leading-relaxed">
-                    Διεκδικήστε <span class="text-white font-bold">100% Μπόνους έως €120</span> + <span class="text-white font-bold">120 Δωρεάν Περιστροφές</span>. Ζήστε την απόλυτη εμπειρία online gaming.
+                
+                <p class="text-lg lg:text-xl text-gray-300 mb-10 max-w-3xl leading-relaxed">
+                    Η αναζήτηση μιας αξιόπιστης πλατφόρμας για online τυχερά παιχνίδια μπορεί να είναι δύσκολη, ειδικά όταν πρόκειται για θέματα ασφάλειας και αξιοπιστίας. Το <strong>20bet casino</strong> είναι μια δυναμική πλατφόρμα που συνδυάζει online casino και αθλητικό στοίχημα.
                 </p>
-                <div class="flex flex-col sm:flex-row items-center gap-4">
-                    <a href="afflink.com?utm-source-test=20bet" class="w-full sm:w-auto gold-gradient px-10 py-5 rounded-xl text-black font-black text-xl uppercase tracking-tight btn-animate shimmer text-center">
-                        ΠΑΡΤΕ ΤΟ ΜΠΟΝΟΥΣ
+
+                <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                    <a href="afflink.com?utm-source-test=20bet" class="group relative bg-primary hover:bg-secondary text-dark text-xl font-black py-6 px-10 rounded-2xl flex items-center justify-center gap-3 transition-all transform hover:scale-105">
+                        ΠΑΙΞΤΕ ΤΩΡΑ ΜΕ ΜΠΟΝΟΥΣ
+                        <i data-lucide="chevron-right" class="w-6 h-6 group-hover:translate-x-1 transition-transform"></i>
                     </a>
+                </div>
+
+                <div class="flex flex-wrap items-center gap-8 opacity-70">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="shield-check" class="text-primary w-5 h-5"></i>
+                        <span class="text-sm font-bold uppercase tracking-widest">Άδεια Curacao</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="lock" class="text-primary w-5 h-5"></i>
+                        <span class="text-sm font-bold uppercase tracking-widest">SSL Ασφάλεια</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="zap" class="text-primary w-5 h-5"></i>
+                        <span class="text-sm font-bold uppercase tracking-widest">Crypto Ready</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Quick Benefits -->
-    <section class="py-12 bg-zinc-950 border-y border-white/5">
-        <div class="container mx-auto px-4 md:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="flex items-start gap-4">
-                    <div class="p-3 rounded-2xl bg-white/5 text-[#D4AF37]"><i data-lucide="zap" class="w-8 h-8"></i></div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-1">Γρήγορες Αναλήψεις</h3>
-                        <p class="text-gray-400 text-sm">Επεξεργασία αναλήψεων σε κρυπτονομίσματα εντός 24 ωρών.</p>
+    <!-- USPs -->
+    <section class="py-12 bg-surface border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 border border-primary/20">
+                        <i data-lucide="clock" class="text-primary w-8 h-8"></i>
                     </div>
+                    <h3 class="font-bold text-lg mb-1 italic uppercase">Γρήγορες Αναλήψεις</h3>
+                    <p class="text-sm text-gray-400">Επεξεργασία εντός 24 ωρών.</p>
                 </div>
-                <div class="flex items-start gap-4">
-                    <div class="p-3 rounded-2xl bg-white/5 text-[#D4AF37]"><i data-lucide="dices" class="w-8 h-8"></i></div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-1">3.000+ Παιχνίδια</h3>
-                        <p class="text-gray-400 text-sm">Τεράστια συλλογή από slots, live καζίνο και αθλητικό στοίχημα.</p>
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 border border-primary/20">
+                        <i data-lucide="gamepad-2" class="text-primary w-8 h-8"></i>
                     </div>
+                    <h3 class="font-bold text-lg mb-1 italic uppercase">4,000+ Παιχνίδια</h3>
+                    <p class="text-sm text-gray-400">Από κορυφαίους παρόχους.</p>
                 </div>
-                <div class="flex items-start gap-4">
-                    <div class="p-3 rounded-2xl bg-white/5 text-[#D4AF37]"><i data-lucide="shield" class="w-8 h-8"></i></div>
-                    <div>
-                        <h3 class="text-xl font-bold mb-1">Νόμιμο & Ασφαλές</h3>
-                        <p class="text-gray-400 text-sm">Άδεια Κουρασάο και προηγμένη κρυπτογράφηση SSL.</p>
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 border border-primary/20">
+                        <i data-lucide="headphones" class="text-primary w-8 h-8"></i>
                     </div>
+                    <h3 class="font-bold text-lg mb-1 italic uppercase">24/7 Υποστήριξη</h3>
+                    <p class="text-sm text-gray-400">Live Chat πάντα διαθέσιμο.</p>
+                </div>
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 border border-primary/20">
+                        <i data-lucide="coins" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-1 italic uppercase">Crypto Ready</h3>
+                    <p class="text-sm text-gray-400">BTC, ETH, LTC & άλλα.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Main Content Section -->
+    <section class="py-24 max-w-7xl mx-auto px-4 lg:px-8">
+        <div class="grid lg:grid-cols-3 gap-12">
+            <!-- Long Form Content -->
+            <div class="lg:col-span-2 prose max-w-none">
+                <p>Ιδρύθηκε το 2020 και λειτουργεί με άδεια από το Curacao, γεγονός που το καθιστά νόμιμο καζίνο για διεθνείς παίκτες, συμπεριλαμβανομένων αυτών από την Ελλάδα. Η πλατφόρμα ξεχωρίζει για τη μεγάλη βιβλιοθήκη παιχνιδιών της με πάνω από 4000 τίτλους, την υποστήριξη κρυπτονομισμάτων και την άψογη συμβατότητα με κινητές συσκευές. Σε αυτή την αναλυτική κριτική, θα εξετάσουμε όλα τα στοιχεία που χρειάζεστε για να αποφασίσετε εάν το 20Bet είναι η κατάλληλη επιλογή για εσάς.</p>
+
+                <h2>Γενική επισκόπηση του 20Bet Casino Online</h2>
+                <p>Το 20Bet είναι μια ολοκληρωμένη πλατφόρμα ψυχαγωγίας που απευθύνεται τόσο σε λάτρεις των καζίνο όσο και σε φίλους των αθλητικών στοιχημάτων. Από το λανσάρισμά του το 2020, το site έχει κατορθώσει να κερδίσει την εμπιστοσύνη χιλιάδων παικτών παγκοσμίως χάρη στην αξιοπιστία του και την ποικιλία των επιλογών που προσφέρει.</p>
+                <p>Η άδεια λειτουργίας από το Curacao εγγυάται ένα ελάχιστο επίπεδο ασφάλειας παικτών και διαφάνειας στις συναλλαγές. Οι Έλληνες παίκτες μπορούν να εγγραφούν ελεύθερα και να απολαύσουν όλα τα χαρακτηριστικά της πλατφόρμας χωρίς περιορισμούς. Το interface είναι διαισθητικό, με εύκολη πλοήγηση μεταξύ των διαφόρων κατηγοριών.</p>
+                <p>Ένα από τα βασικά πλεονεκτήματα είναι η φιλικότητα προς τα κρυπτονομίσματα. Οι χρήστες μπορούν να καταθέτουν και να αποσύρουν κεφάλαια χρησιμοποιώντας Bitcoin, Ethereum και άλλες δημοφιλείς κρυπτοσυναλλαγματικές μονάδες. Αυτό εξασφαλίζει γρηγορότερες συναλλαγές και επιπλέον ανωνυμία.</p>
+                <p>Η πλατφόρμα είναι πλήρως προσαρμοσμένη σε desktop και mobile συσκευές, επιτρέποντας στους παίκτες να απολαμβάνουν τα αγαπημένα τους παιχνίδια οποτεδήποτε και οπουδήποτε.</p>
+
+                <h2>20Bet Μπόνους και Προσφορές για παίκτες</h2>
+                <p>Οι προσφορές μπόνους είναι συχνά η πρώτη επαφή ενός παίκτη με ένα online καζίνο. Το 20bet casino online προσφέρει ένα γενναιόδωρο πακέτο καλωσορίσματος που απευθύνεται ειδικά στους λάτρεις του καζίνο. Ο μπόνους εγγραφής συνήθως περιλαμβάνει 100% επιπλέον χρήματα στην πρώτη κατάθεση, έως ένα συγκεκριμένο ποσό, καθώς και δωρεάν περιστροφές σε επιλεγμένα slots.</p>
+                <p>Για να ενεργοποιήσετε το μπόνους καλωσορίσματος, θα πρέπει να πραγματοποιήσετε μια ελάχιστη κατάθεση που συνήθως κυμαίνεται στα €20. Είναι σημαντικό να κατανοήσετε τις απαιτήσεις στοιχηματισμού πριν ξεκινήσετε. Στην περίπτωση του 20Bet, ο παίκτης συνήθως πρέπει να στοιχηματίσει το ποσό του μπόνους 40 φορές (x40) πριν μπορέσει να κάνει ανάληψη των κερδών.</p>
+                <p>Υπάρχουν επίσης περιορισμοί ως προς τα παιχνίδια που συμβάλλουν στην εκπλήρωση των wagering requirements. Τα φρουτάκια και κουλοχέρηδες συνήθως συμβάλλουν 100%, ενώ παιχνίδια τραπεζιού όπως το Blackjack ή η Ρουλέτα μπορεί να συμβάλλουν λιγότερο ή καθόλου.</p>
+                <p>Εκτός από το μπόνους καλωσορίσματος, το 20Bet προσφέρει και επαναλαμβανόμενες προσφορές όπως το Friday Reload Bonus. Κάθε Παρασκευή, οι παίκτες μπορούν να αξιώσουν ένα επιπλέον μπόνους στην κατάθεσή τους, προσφέροντας μακροπρόθεσμη αξία.</p>
+
+                <h3>Πρόγραμμα VIP και ανταμοιβές αφοσίωσης</h3>
+                <p>Το πρόγραμμα επιβράβευσης του 20Bet είναι αυτόματο και προσιτό σε όλους. Από τη στιγμή που πραγματοποιείτε την πρώτη σας κατάθεση, αρχίζετε να συλλέγετε πόντοι comp (CP) με κάθε στοίχημα που τοποθετείτε. Όσο περισσότερο παίζετε, τόσο περισσότερους πόντους συγκεντρώνετε.</p>
+                <p>Οι πόντοι μπορούν στη συνέχεια να ανταλλαχθούν με πραγματικά χρήματα ή δωρεάν περιστροφές. Η διαδικασία είναι απλή και διαφανής, χωρίς κρυφές προϋποθέσεις. Το σύστημα έχει διαφορετικά επίπεδα VIP, με τα υψηλότερα επίπεδα να προσφέρουν μεγαλύτερα έπαθλα VIP, προσωποποιημένη εξυπηρέτηση και ταχύτερες αναλήψεις.</p>
+            </div>
+
+            <!-- Sidebar / Call to Action -->
+            <div class="lg:col-span-1">
+                <div class="sticky top-28 space-y-8">
+                    <div class="glass p-8 rounded-3xl border-primary/20 relative overflow-hidden">
+                        <div class="relative z-10">
+                            <h3 class="text-2xl font-black italic uppercase mb-4 text-primary">ΕΓΓΡΑΦΗ ΒΗΜΑ-ΒΗΜΑ</h3>
+                            <ol class="space-y-4 text-sm text-gray-300">
+                                <li class="flex gap-3"><span class="bg-primary text-dark w-6 h-6 rounded-full flex items-center justify-center font-bold flex-shrink-0 text-xs">1</span> Πατήστε "Εγγραφή" στην επάνω δεξιά γωνία.</li>
+                                <li class="flex gap-3"><span class="bg-primary text-dark w-6 h-6 rounded-full flex items-center justify-center font-bold flex-shrink-0 text-xs">2</span> Εισάγετε Χώρα (Ελλάδα), email και κωδικό.</li>
+                                <li class="flex gap-3"><span class="bg-primary text-dark w-6 h-6 rounded-full flex items-center justify-center font-bold flex-shrink-0 text-xs">3</span> Επιλέξτε νόμισμα (EUR).</li>
+                                <li class="flex gap-3"><span class="bg-primary text-dark w-6 h-6 rounded-full flex items-center justify-center font-bold flex-shrink-0 text-xs">4</span> Συμπληρώστε τα προσωπικά σας στοιχεία.</li>
+                                <li class="flex gap-3"><span class="bg-primary text-dark w-6 h-6 rounded-full flex items-center justify-center font-bold flex-shrink-0 text-xs">5</span> Επιβεβαιώστε τον λογαριασμό μέσω email.</li>
+                            </ol>
+                            <a href="afflink.com?utm-source-test=20bet" class="block w-full text-center bg-primary hover:bg-secondary text-dark font-black py-4 rounded-xl mt-8 transition-all">
+                                ΔΗΜΙΟΥΡΓΙΑ ΛΟΓΑΡΙΑΣΜΟΥ
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-accent/50 p-6 rounded-2xl border border-white/5">
+                        <h4 class="font-bold mb-4 uppercase italic">Γιατί να επιλέξετε 20Bet;</h4>
+                        <ul class="space-y-3 text-sm text-gray-400">
+                            <li class="flex items-center gap-2 text-primary font-medium">
+                                <i data-lucide="check-circle-2" class="w-4 h-4"></i> 4000+ Παιχνίδια
+                            </li>
+                            <li class="flex items-center gap-2 text-primary font-medium">
+                                <i data-lucide="check-circle-2" class="w-4 h-4"></i> Bonus Εγγραφής 100%
+                            </li>
+                            <li class="flex items-center gap-2 text-primary font-medium">
+                                <i data-lucide="check-circle-2" class="w-4 h-4"></i> Apple Pay & Crypto
+                            </li>
+                            <li class="flex items-center gap-2 text-primary font-medium">
+                                <i data-lucide="check-circle-2" class="w-4 h-4"></i> Native iOS/Android Apps
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Carousel -->
+    <section id="games" class="py-24 bg-surface/50 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <h2 class="text-4xl lg:text-5xl font-black italic uppercase mb-12">Παιχνίδια & <span class="text-primary">Φρουτάκια</span></h2>
+            <p class="text-gray-400 mb-12 max-w-4xl">Η βιβλιοθήκη παιχνιδιών του 20Bet είναι εντυπωσιακή, με πάνω από 4000 διαφορετικούς τίτλους που καλύπτουν όλες τις προτιμήσεις. Η πλατφόρμα συνεργάζεται με κορυφαίους πάροχους λογισμικού όπως οι Play'n GO, NetEnt, Pragmatic Play, Microgaming, Evolution Gaming και πολλοί άλλοι.</p>
+
+            <div id="game-carousel" class="flex gap-6 overflow-x-auto no-scrollbar pb-8 snap-x">
+                <div class="min-w-[280px] md:min-w-[300px] snap-start group relative rounded-2xl overflow-hidden aspect-[3/4]">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1518893063132-36e46dbe2428?w=400&h=533&fit=crop" alt="Book of Dead" class="w-full h-full object-cover">
+                    <div class="game-overlay absolute inset-0 bg-dark/80 opacity-0 flex flex-col items-center justify-center p-6 transition-opacity duration-300 group-hover:opacity-100">
+                        <h4 class="text-xl font-bold mb-4">Book of Dead</h4>
+                        <a href="afflink.com?utm-source-test=20bet" class="bg-primary text-dark px-8 py-3 rounded-xl font-bold">ΠΑΙΞΤΕ ΤΩΡΑ</a>
+                    </div>
+                </div>
+                <div class="min-w-[280px] md:min-w-[300px] snap-start group relative rounded-2xl overflow-hidden aspect-[3/4]">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1596838132731-dd9651557c5a?w=400&h=533&fit=crop" alt="Wolf Gold" class="w-full h-full object-cover">
+                    <div class="game-overlay absolute inset-0 bg-dark/80 opacity-0 flex flex-col items-center justify-center p-6 transition-opacity duration-300 group-hover:opacity-100">
+                        <h4 class="text-xl font-bold mb-4">Wolf Gold</h4>
+                        <a href="afflink.com?utm-source-test=20bet" class="bg-primary text-dark px-8 py-3 rounded-xl font-bold">ΠΑΙΞΤΕ ΤΩΡΑ</a>
+                    </div>
+                </div>
+                <div class="min-w-[280px] md:min-w-[300px] snap-start group relative rounded-2xl overflow-hidden aspect-[3/4]">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1606167668584-78701c57f13d?w=400&h=533&fit=crop" alt="Starburst" class="w-full h-full object-cover">
+                    <div class="game-overlay absolute inset-0 bg-dark/80 opacity-0 flex flex-col items-center justify-center p-6 transition-opacity duration-300 group-hover:opacity-100">
+                        <h4 class="text-xl font-bold mb-4">Starburst</h4>
+                        <a href="afflink.com?utm-source-test=20bet" class="bg-primary text-dark px-8 py-3 rounded-xl font-bold">ΠΑΙΞΤΕ ΤΩΡΑ</a>
+                    </div>
+                </div>
+                <div class="min-w-[280px] md:min-w-[300px] snap-start group relative rounded-2xl overflow-hidden aspect-[3/4]">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1595113316349-9fa4ee24f884?w=400&h=533&fit=crop" alt="Live Roulette" class="w-full h-full object-cover">
+                    <div class="game-overlay absolute inset-0 bg-dark/80 opacity-0 flex flex-col items-center justify-center p-6 transition-opacity duration-300 group-hover:opacity-100">
+                        <h4 class="text-xl font-bold mb-4">Live Roulette</h4>
+                        <a href="afflink.com?utm-source-test=20bet" class="bg-primary text-dark px-8 py-3 rounded-xl font-bold">ΠΑΙΞΤΕ ΤΩΡΑ</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="prose max-w-none mt-12">
+                <h3>Δημοφιλείς κουλοχέρηδες και Slots</h3>
+                <p>Τα video slots αποτελούν την καρδιά της προσφοράς του 20Bet. Θα βρείτε κλασικούς τίτλους καθώς και νεότερες κυκλοφορίες. Μια ιδιαίτερα δημοφιλής κατηγορία είναι τα slots με προοδευτικά τζάκποτ, όπως το Mega Moolah. Για τους πιο ανυπόμονους παίκτες, υπάρχει η κατηγορία "Bonus Buy".</p>
+                <h3>Ζωντανό καζίνο (Live Casino)</h3>
+                <p>Το ζωντανό καζίνο του 20Bet προσφέρει μια αυθεντική εμπειρία με πραγματικούς dealers σε πραγματικό χρόνο μέσω HD streaming. Θα βρείτε όλα τα κλασικά: ρουλέτα, blackjack, Baccarat και Poker, αλλά και καινοτόμα τηλεπαιχνίδια όπως το Crazy Time και το Monopoly Live.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- App & Sports Betting -->
     <section class="py-24">
-        <div class="container mx-auto px-4 md:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                <!-- Content -->
-                <div class="lg:col-span-8 content-section">
-                    <h2>Εισαγωγή στο 20Bet Casino: Τι πρέπει να γνωρίζετε</h2>
-                    <p>Το <b>20bet casino</b> είναι μια σχετικά νέα πλατφόρμα στον κόσμο του online τζόγου, η οποία ιδρύθηκε το 2020 και έχει κερδίσει γρήγορα την εμπιστοσύνη χιλιάδων παικτών ανά τον κόσμο. Για τους παίκτες στην Ελλάδα, το πρώτο ερώτημα είναι πάντα το ίδιο: είναι ασφαλής και νόμιμη αυτή η πλατφόρμα; Η απάντηση είναι ναι. Το online καζίνο Ελλάδα λειτουργεί με άδεια Κουρασάο, η οποία εγγυάται τη νόμιμη λειτουργία του και την προστασία των παικτών.</p>
-                    <p>Αυτό που κάνει το 20bet casino ιδιαίτερα ελκυστικό είναι ο διπλός του χαρακτήρας. Δεν πρόκειται απλώς για ένα νόμιμο καζίνο, αλλά για μια ολοκληρωμένη πλατφόρμα που συνδυάζει τόσο παιχνίδια καζίνο όσο και αθλητικό στοίχημα. Αυτό σημαίνει ότι μπορείτε να απολαύσετε χιλιάδες φρουτάκια, ζωντανά παιχνίδια με ντίλερ, αλλά και να τοποθετήσετε στοιχήματα σε αγαπημένες ομάδες και αθλητικά γεγονότα.</p>
-                    <p>Σε αυτόν τον οδηγό θα εξετάσουμε κάθε πτυχή της πλατφόρμας: από τα μπόνους εγγραφής και τις μεθόδους πληρωμής μέχρι την ασφάλεια και την εξυπηρέτηση πελατών. Στόχος μας είναι να σας δώσουμε όλες τις πληροφορίες που χρειάζεστε για να αποφασίσετε αν το 20bet casino είναι η κατάλληλη επιλογή για εσάς.</p>
-
-                    <h2>20Bet Casino Μπόνους και Προσφορές</h2>
-                    <p>Οι προσφορές καζίνο αποτελούν έναν από τους κύριους λόγους για τους οποίους οι παίκτες επιλέγουν να εγγραφούν σε μια νέα πλατφόρμα. Το 20bet casino προσφέρει ένα πλούσιο πρόγραμμα επιβράβευσης που απευθύνεται τόσο σε λάτρεις των παιχνιδιών καζίνο όσο και σε φίλους του αθλητικού στοιχήματος. Είναι σημαντικό να κατανοήσετε ότι κάθε μπόνους συνοδεύεται από συγκεκριμένους όρους και προϋποθέσεις.</p>
-                    <p>Η διαφάνεια είναι κλειδί στην αξιολόγηση ενός καζίνο. Γι' αυτό θα αναλύσουμε λεπτομερώς τις απαιτήσεις τζίρου, τις ελάχιστες καταθέσεις και τα χρονικά όρια που ισχύουν. Αυτό θα σας βοηθήσει να αποφύγετε δυσάρεστες εκπλήξεις και να αξιοποιήσετε στο έπακρο τα οφέλη που προσφέρει η πλατφόρμα.</p>
-
-                    <h3>Μπόνους Καλωσορίσματος για το Καζίνο</h3>
-                    <p>Το μπόνους εγγραφής για το καζίνο είναι ιδιαίτερα γενναιόδωρο. Οι νέοι παίκτες μπορούν να διεκδικήσουν 100% μπόνους στην πρώτη τους κατάθεση έως και €120, συν 120 δωρεάν περιστροφές σε επιλεγμένα φρουτάκια. Συνήθως οι δωρεάν περιστροφές δίνονται σε δημοφιλή παιχνίδια όπως το Elvis Frog in Vegas.</p>
-                    <p>Για να ενεργοποιήσετε αυτό το μπόνους, απαιτείται ελάχιστη κατάθεση €20. Ωστόσο, υπάρχει μια λεπτομέρεια που πρέπει να γνωρίζετε: οι δωρεάν περιστροφές δεν πιστώνονται όλες με μία φορά. Συνήθως δίνονται σε δόσεις των 30 ανά ημέρα για τέσσερις ημέρες. Αυτό δεν σημαίνει ότι υπάρχει κάποιο πρόβλημα – είναι απλώς ο τρόπος με τον οποίο η πλατφόρμα διαχειρίζεται τα μπόνους.</p>
-                    <p>Η απαίτηση τζίρου για το μπόνους είναι x40. Αυτό σημαίνει ότι θα πρέπει να ποντάρετε το ποσό του μπόνους 40 φορές προτού μπορέσετε να αναλάβετε τα κέρδη σας. Για παράδειγμα, αν λάβετε €100 μπόνους, θα πρέπει να τοποθετήσετε στοιχήματα συνολικού ύψους €4.000. Ενώ αυτό μπορεί να φαίνεται υψηλό, είναι εντός των τυπικών ορίων της βιομηχανίας.</p>
-
-                    <h3>Μπόνους για Αθλητικό Στοίχημα</h3>
-                    <p>Οι λάτρεις του αθλητικού στοιχήματος έχουν τη δική τους ξεχωριστή προσφορά. Το μπόνους για τα sports φτάνει έως και €100 στην πρώτη κατάθεση. Οι όροι διαφέρουν σημαντικά από εκείνους του καζίνο, καθώς εδώ ο τζίρος στοιχήματος βασίζεται σε συνδυαστικά στοιχήματα με συγκεκριμένες αποδόσεις.</p>
-                    <p>Συγκεκριμένα, τα στοιχήματα πρέπει να είναι accumulator (συνδυαστικά) με τουλάχιστον τρία γεγονότα και συνολικές αποδόσεις τουλάχιστον 1.40. Αυτή η διαφοροποίηση είναι φυσιολογική, καθώς τα αθλητικά στοιχήματα και το καζίνο έχουν εντελώς διαφορετική δυναμική.</p>
-
-                    <h3>Πρόγραμμα VIP και Εβδομαδιαία Reload</h3>
-                    <p>Το 20bet casino φροντίζει και τους πιστούς παίκτες με ένα ολοκληρωμένο πρόγραμμα αφοσίωσης. Κάθε Παρασκευή υπάρχει η επαναφόρτωση Παρασκευής (Friday Reload), που προσφέρει επιπλέον μπόνους σε τακτικούς παίκτες. Το σύστημα VIP επιπέδων βασίζεται σε πόντοι αφοσίωσης (CP - Comp Points). Για κάθε €12.50 που ποντάρετε, κερδίζετε έναν πόντο.</p>
-
-                    <h2>Διαδικασία εγγραφής στο 20Bet</h2>
-                    <ol>
-                      <li><b>Επισκεφθείτε την επίσημη ιστοσελίδα:</b> Πατήστε το κουμπί "Εγγραφή".</li>
-                      <li><b>Συμπληρώστε τη φόρμα εγγραφής:</b> Email, κωδικός πρόσβασης και νόμισμα (Ευρώ).</li>
-                      <li><b>Προσθέστε προσωπικά δεδομένα:</b> Όνομα, ημερομηνία γέννησης και διεύθυνση.</li>
-                      <li><b>Επιβεβαίωση λογαριασμού:</b> Μέσω email.</li>
-                      <li><b>Ταυτοποίηση στοιχείων (KYC):</b> Υποβολή εγγράφων ταυτοποίησης.</li>
-                    </ol>
-
-                    <h2>Παιχνίδια και Λογισμικό στο 20Bet Casino</h2>
-                    <p>Με πάνω από 3.000 τίτλους, το 20bet casino συνεργάζεται με κορυφαίους παρόχους λογισμικού όπως NetEnt, Play'n GO, Pragmatic Play, Microgaming, Evolution Gaming και πολλούς άλλους. Αυτό εγγυάται όχι μόνο ποικιλία, αλλά και υψηλή ποιότητα γραφικών, δίκαιο παιχνίδι και καινοτόμα χαρακτηριστικά.</p>
-
-                    <h3>Κουλοχέρηδες και Φρουτάκια</h3>
-                    <p>Τα φρουτάκια αποτελούν το μεγαλύτερο τμήμα της βιβλιοθήκης. Υπάρχουν κλασικοί κουλοχέρηδες με 3 τροχούς, αλλά και σύγχρονα video slots με bonus γύρους. Οι λάτρεις των μεγάλων κερδών μπορούν να δοκιμάσουν τα τζάκποτ slots όπως το Mega Moolah ή το Divine Fortune. Μια εξαιρετική δυνατότητα είναι η επιλογή δωρεάν παιχνιδιού (demo mode).</p>
-
-                    <h3>Ζωντανό Καζίνο (Live Casino)</h3>
-                    <p>Με τεχνολογία από την Evolution Gaming, μπορείτε να παίξετε ρουλέτα με ζωντανό ντίλερ, μπλακτζάκ, baccarat και poker. Η ποιότητα του live streaming είναι εξαιρετική, με HD κάμερες και επαγγελματίες ντίλερ. Δημοφιλή τηλεπαιχνίδια όπως το Crazy Time και Monopoly Live είναι επίσης διαθέσιμα.</p>
-
-                    <h2>Αθλητικό Στοίχημα και Esports</h2>
-                    <p>Το 20bet προσφέρει αγορές για δεκάδες αθλήματα όπως ποδόσφαιρο, μπάσκετ και τένις. Ένα ξεχωριστό πλεονέκτημα είναι η ισχυρή παρουσία στα Esports (Dota 2, CS:GO, LoL). Η λειτουργία ζωντανός στοιχηματισμός (live betting) προσθέτει επιπλέον αδρεναλίνη στην εμπειρία.</p>
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div class="prose max-w-none">
+                    <h2>Επιλογές για Αθλητικό Στοίχημα</h2>
+                    <p>Το 20Bet είναι επίσης μια ισχυρή πλατφόρμα αθλητικών στοιχημάτων. Με έναν λογαριασμό μπορείτε να απολαύσετε και τις δύο πτυχές της ψυχαγωγίας. Η πλατφόρμα καλύπτει δεκάδες αθλήματα (ποδόσφαιρο, μπάσκετ, τένις, esports) με ανταγωνιστικές αποδόσεις και ανεπτυγμένο live betting.</p>
                 </div>
+                <div class="prose max-w-none">
+                    <h2>20Bet App & Mobile Experience</h2>
+                    <p>Υπάρχει διαθέσιμη εφαρμογή για κινητά τόσο για iOS όσο και για Android συσκευές. Η εφαρμογή προσφέρει πλήρη πρόσβαση σε όλα τα παιχνίδια. Εναλλακτικά, μπορείτε να χρησιμοποιήσετε την mobile browser έκδοση η οποία λειτουργεί άψογα χωρίς λήψη.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Sidebar / CTA -->
-                <div class="lg:col-span-4">
-                    <div class="sticky top-28 space-y-6">
-                        <div class="glass-card rounded-3xl p-6 border-l-4 border-l-[#D4AF37]">
-                            <h3 class="text-xl font-black mb-4 uppercase gold-text">Welcome Package</h3>
-                            <div class="text-3xl font-black mb-2">100% ΕΩΣ €120</div>
-                            <p class="text-sm text-gray-400 mb-6">+120 Δωρεάν Περιστροφές</p>
-                            <a href="afflink.com?utm-source-test=20bet" class="block w-full text-center gold-gradient py-3 rounded-xl text-black font-black uppercase btn-animate mb-4">ΕΓΓΡΑΦΗ ΤΩΡΑ</a>
-                            <p class="text-[10px] text-gray-500 uppercase text-center">*18+ T&Cs Apply. Play Responsibly.</p>
-                        </div>
-
-                        <div class="glass-card rounded-3xl p-6">
-                            <h3 class="text-lg font-bold mb-4 uppercase">Πλεονεκτήματα</h3>
-                            <ul class="space-y-3 text-sm">
-                                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="text-green-500 w-4 h-4"></i> 3.000+ Φρουτάκια</li>
-                                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="text-green-500 w-4 h-4"></i> Crypto-friendly</li>
-                                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="text-green-500 w-4 h-4"></i> Live Casino HD</li>
-                                <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="text-green-500 w-4 h-4"></i> Esports Betting</li>
-                            </ul>
-                        </div>
+    <!-- Bonuses Table-Style section -->
+    <section id="bonuses" class="py-24 bg-surface relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8 relative z-10">
+            <h2 class="text-4xl lg:text-5xl font-black italic uppercase mb-16 text-center">Πακέτο <span class="text-primary">Καλωσορίσματος</span></h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Bonus 1 -->
+                <div class="glass p-8 rounded-3xl border-white/5 hover:border-primary/30 transition-all">
+                    <div class="bg-primary/20 p-4 rounded-2xl w-fit mb-6">
+                        <i data-lucide="gift" class="text-primary w-8 h-8"></i>
                     </div>
+                    <h3 class="text-3xl font-black italic uppercase mb-4">100% ΕΩΣ €120</h3>
+                    <p class="text-gray-400 mb-8">Διπλασιάστε την πρώτη σας κατάθεση και κερδίστε 120 Δωρεάν Περιστροφές.</p>
+                    <a href="afflink.com?utm-source-test=20bet" class="block text-center bg-primary text-dark font-bold py-4 rounded-xl">ΛΗΨΗ ΜΠΟΝΟΥΣ</a>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Payment Methods Table -->
-    <section id="payments" class="py-24 bg-zinc-950">
-        <div class="container mx-auto px-4 md:px-8">
-            <h2 class="text-3xl font-black mb-12 text-center uppercase gold-text">Μέθοδοι Κατάθεσης και Ανάληψης</h2>
-            <div class="overflow-x-auto">
-                <table class="w-full text-left glass-card rounded-3xl overflow-hidden">
-                    <thead>
-                        <tr class="bg-white/10">
-                            <th class="p-6 font-bold uppercase text-sm">Μέθοδος</th>
-                            <th class="p-6 font-bold uppercase text-sm">Χρόνος Επεξεργασίας</th>
-                            <th class="p-6 font-bold uppercase text-sm">Όριο ανά συναλλαγή</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-white/10">
-                        <tr>
-                            <td class="p-6 text-gray-300">Κρυπτονομίσματα (BTC, ETH, USDT)</td>
-                            <td class="p-6 text-gray-300">1-24 ώρες</td>
-                            <td class="p-6 text-gray-300">€4.000/ημέρα</td>
-                        </tr>
-                        <tr>
-                            <td class="p-6 text-gray-300">Ηλεκτρονικά πορτοφόλια (Skrill, Neteller)</td>
-                            <td class="p-6 text-gray-300">1-3 ημέρες</td>
-                            <td class="p-6 text-gray-300">€4.000/ημέρα</td>
-                        </tr>
-                        <tr>
-                            <td class="p-6 text-gray-300">Πιστωτικές κάρτες (Visa, Mastercard)</td>
-                            <td class="p-6 text-gray-300">3-5 ημέρες</td>
-                            <td class="p-6 text-gray-300">€4.000/ημέρα</td>
-                        </tr>
-                        <tr>
-                            <td class="p-6 text-gray-300">Τραπεζικό έμβασμα</td>
-                            <td class="p-6 text-gray-300">5-7 ημέρες</td>
-                            <td class="p-6 text-gray-300">€4.000/ημέρα</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="mt-8 text-center">
-                <p class="text-gray-400 mb-6">Διαθέσιμες μέθοδοι: Visa, Mastercard, Skrill, Neteller, ecoPayz, MuchBetter, Bitcoin, Ethereum, Tether και άλλα.</p>
-                <a href="afflink.com?utm-source-test=20bet" class="inline-block gold-gradient px-8 py-4 rounded-xl text-black font-black uppercase shimmer btn-animate">ΚΑΤΑΘΕΣΗ ΤΩΡΑ</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Mobile App & Technical Info -->
-    <section class="py-24 border-t border-white/5">
-        <div class="container mx-auto px-4 md:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <div class="content-section">
-                    <h2>20Bet App και Έκδοση για Κινητά</h2>
-                    <p>Το καζίνο στο κινητό της 20bet λειτουργεί άψογα. Υπάρχει APK για χρήστες Android απευθείας από την ιστοσελίδα. Για iOS, η mobile έκδοση της ιστοσελίδας είναι πλήρως responsive και προσφέρει όλα τα χαρακτηριστικά της desktop έκδοσης χωρίς να χρειάζεται download.</p>
-                    
-                    <h3>Εξυπηρέτηση Πελατών και Ασφάλεια</h3>
-                    <p>Το 20bet προσφέρει υποστήριξη μέσω Live Chat 24/7 και email. Η ασφάλεια δεδομένων είναι προτεραιότητα με χρήση κρυπτογράφησης SSL 128-bit. Για το υπεύθυνο παιχνίδι, παρέχονται εργαλεία αυτοπεριορισμού και ορίων καταθέσεων.</p>
-                </div>
-                <div class="glass-card p-8 rounded-3xl">
-                    <h3 class="text-2xl font-black mb-6 gold-text uppercase">Pros & Cons</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <h4 class="text-green-500 font-bold mb-2 flex items-center gap-2"><i data-lucide="plus-circle"></i> Πλεονεκτήματα</h4>
-                            <ul class="text-sm space-y-1 text-gray-400">
-                                <li>• 3.000+ τίτλοι παιχνιδιών</li>
-                                <li>• Αποδοχή κρυπτονομισμάτων</li>
-                                <li>• Καζίνο & Στοίχημα μαζί</li>
-                                <li>• Άδεια Κουρασάο</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="text-red-500 font-bold mb-2 flex items-center gap-2"><i data-lucide="minus-circle"></i> Μειονεκτήματα</h4>
-                            <ul class="text-sm space-y-1 text-gray-400">
-                                <li>• Όρια ανάληψης €4.000/ημέρα</li>
-                                <li>• Support κυρίως στα Αγγλικά</li>
-                                <li>• Τζίρος x40 για μπόνους</li>
-                            </ul>
-                        </div>
+                <!-- Bonus 2 -->
+                <div class="glass p-8 rounded-3xl border-white/5 hover:border-primary/30 transition-all">
+                    <div class="bg-primary/20 p-4 rounded-2xl w-fit mb-6">
+                        <i data-lucide="zap" class="text-primary w-8 h-8"></i>
                     </div>
+                    <h3 class="text-3xl font-black italic uppercase mb-4">FRIDAY RELOAD</h3>
+                    <p class="text-gray-400 mb-8">Κάθε Παρασκευή, αξιώστε ένα επιπλέον μπόνους στην κατάθεσή σας.</p>
+                    <a href="afflink.com?utm-source-test=20bet" class="block text-center bg-primary text-dark font-bold py-4 rounded-xl">ΜΑΘΕΤΕ ΠΕΡΙΣΣΟΤΕΡΑ</a>
+                </div>
+
+                <!-- Bonus 3 -->
+                <div class="glass p-8 rounded-3xl border-white/5 hover:border-primary/30 transition-all">
+                    <div class="bg-primary/20 p-4 rounded-2xl w-fit mb-6">
+                        <i data-lucide="crown" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-3xl font-black italic uppercase mb-4">VIP CLUB</h3>
+                    <p class="text-gray-400 mb-8">Συλλέξτε πόντους comp (CP) και ανταλλάξτε τους με πραγματικά χρήματα.</p>
+                    <a href="afflink.com?utm-source-test=20bet" class="block text-center bg-primary text-dark font-bold py-4 rounded-xl">ΓΙΝΕΤΕ VIP</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="py-24 bg-zinc-950">
-        <div class="container mx-auto px-4 md:px-8 max-w-4xl">
-            <h2 class="text-4xl font-black mb-12 text-center uppercase gold-text">Συχνές Ερωτήσεις (FAQ)</h2>
-            <div class="space-y-4">
-                <div class="glass-card rounded-2xl p-6">
-                    <h4 class="font-bold mb-2 text-white">Είναι ασφαλές το 20Bet Casino;</h4>
-                    <p class="text-gray-400 text-sm">Ναι, λειτουργεί με άδεια από την Κυβέρνηση του Κουρασάο και χρησιμοποιεί κρυπτογράφηση SSL.</p>
+    <!-- Payment Methods -->
+    <section id="payments" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <h2 class="text-3xl font-black italic uppercase mb-12 text-center">Ασφαλείς <span class="text-primary">Πληρωμές</span></h2>
+            
+            <div class="prose max-w-none mb-12 text-center">
+                <p>Οι καταθέσεις είναι άμεσες και οι αναλήψεις επεξεργάζονται γρήγορα. Τα e-wallets και τα κρυπτονομίσματα είναι οι ταχύτερες επιλογές (εντός 24 ωρών).</p>
+            </div>
+
+            <div class="flex flex-wrap justify-center items-center gap-8 lg:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="h-8 lg:h-10">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="h-10 lg:h-14">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="Paypal" class="h-8 lg:h-10">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin" class="h-10 lg:h-12">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Skrill_logo.svg" alt="Skrill" class="h-8 lg:h-10">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Apple_Pay_logo.svg" alt="Apple Pay" class="h-10 lg:h-12">
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mt-16 prose max-w-none text-sm">
+                <div>
+                    <strong>Μέθοδοι Κατάθεσης:</strong> Visa, Mastercard, Skrill, Neteller, Bitcoin, Ethereum, LTC, Τραπεζική Μεταφορά κ.α.
                 </div>
-                <div class="glass-card rounded-2xl p-6">
-                    <h4 class="font-bold mb-2 text-white">Ποιο είναι το μπόνους καλωσορίσματος;</h4>
-                    <p class="text-gray-400 text-sm">100% μπόνους έως €120 στην πρώτη κατάθεση + 120 δωρεάν περιστροφές.</p>
-                </div>
-                <div class="glass-card rounded-2xl p-6">
-                    <h4 class="font-bold mb-2 text-white">Πόσος χρόνος χρειάζεται για τις αναλήψεις;</h4>
-                    <p class="text-gray-400 text-sm">Crypto (1-24 ώρες), Ηλεκτρονικά πορτοφόλια (1-3 ημέρες), Κάρτες (3-5 ημέρες).</p>
-                </div>
-                <div class="glass-card rounded-2xl p-6">
-                    <h4 class="font-bold mb-2 text-white">Υπάρχει εφαρμογή για κινητά;</h4>
-                    <p class="text-gray-400 text-sm">Ναι, υπάρχει APK για Android. Οι χρήστες iOS παίζουν μέσω του mobile browser.</p>
+                <div>
+                    <strong>Χρόνοι Ανάληψης:</strong> E-wallets/Crypto (24h), Πιστωτικές Κάρτες (3-5 ημέρες), Τραπεζικές Μεταφορές (έως 7 ημέρες).
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Security & Support -->
+    <section class="py-24 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="prose max-w-none">
+                    <h2>Ασφάλεια και Εξυπηρέτηση Πελατών</h2>
+                    <p>Η ασφάλεια είναι ύψιστη προτεραιότητα για το 20Bet. Χρησιμοποιεί κρυπτογράφηση SSL 128-bit για την προστασία όλων των δεδομένων. Η εξυπηρέτηση πελατών προσφέρει υποστήριξη 24/7 μέσω live chat και email. Αν και η κύρια γλώσσα είναι τα Αγγλικά, η βοήθεια είναι πάντα άμεση και αποτελεσματική.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl border-primary/20">
+                    <h3 class="text-2xl font-bold mb-6 italic uppercase">Στοιχεία Επικοινωνίας</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-4">
+                            <div class="bg-primary/20 p-3 rounded-xl"><i data-lucide="message-square" class="text-primary"></i></div>
+                            <div>
+                                <p class="font-bold">Live Chat</p>
+                                <p class="text-sm text-gray-400 text-sm">Διαθέσιμο 24/7 στην ιστοσελίδα</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <div class="bg-primary/20 p-3 rounded-xl"><i data-lucide="mail" class="text-primary"></i></div>
+                            <div>
+                                <p class="font-bold">Email Support</p>
+                                <p class="text-sm text-gray-400 text-sm">Απάντηση εντός 24 ωρών</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-24 max-w-4xl mx-auto px-4 lg:px-8">
+        <h2 class="text-4xl font-black italic uppercase mb-12 text-center">Συχνές <span class="text-primary">Ερωτήσεις</span></h2>
+        
+        <div class="space-y-6">
+            <div class="glass p-6 rounded-2xl border-white/5">
+                <h4 class="font-bold mb-2">Είναι ασφαλής πλατφόρμα το 20Bet Casino;</h4>
+                <p class="text-gray-400 text-sm">Ναι, το 20Bet λειτουργεί με άδεια από το Curacao και χρησιμοποιεί κρυπτογράφηση SSL για την προστασία των δεδομένων.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl border-white/5">
+                <h4 class="font-bold mb-2">Πόσο χρόνο χρειάζεται για την ανάληψη χρημάτων;</h4>
+                <p class="text-gray-400 text-sm">Οι χρόνοι ανάληψης εξαρτώνται από τη μέθοδο. Τα e-wallets και τα crypto είναι τα ταχύτερα (24 ώρες).</p>
+            </div>
+            <div class="glass p-6 rounded-2xl border-white/5">
+                <h4 class="font-bold mb-2">Υπάρχει μπόνους καλωσορίσματος;</h4>
+                <p class="text-gray-400 text-sm">Ναι, το 20Bet προσφέρει μπόνους εγγραφής που συνήθως περιλαμβάνει 100% επιπλέον χρήματα στην πρώτη κατάθεση και δωρεάν περιστροφές.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl border-white/5">
+                <h4 class="font-bold mb-2">Μπορώ να παίξω δωρεάν;</h4>
+                <p class="text-gray-400 text-sm">Ναι, τα περισσότερα παιχνίδια slots διαθέτουν δωρεάν παιχνίδι σε demo mode.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl border-white/5">
+                <h4 class="font-bold mb-2">Υπάρχει εφαρμογή για κινητά;</h4>
+                <p class="text-gray-400 text-sm">Ναι, το 20Bet διαθέτει εφαρμογές για iOS και Android, καθώς και mobile browser έκδοση.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl border-white/5">
+                <h4 class="font-bold mb-2">Χρειάζομαι να επαληθεύσω την ταυτότητά μου;</h4>
+                <p class="text-gray-400 text-sm">Ναι, πρέπει να ολοκληρώσετε τη διαδικασία KYC με αποστολή ταυτότητας πριν από την πρώτη ανάληψη.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-24 bg-primary text-dark text-center">
+        <div class="max-w-4xl mx-auto px-4 lg:px-8">
+            <h2 class="text-4xl lg:text-6xl font-black italic uppercase mb-8">Συμπέρασμα & Τελική Αξιολόγηση</h2>
+            <p class="text-xl font-medium mb-10 leading-relaxed">
+                Το 20bet casino είναι μια ολοκληρωμένη πλατφόρμα που συνδυάζει casino με ποιοτικές επιλογές στοιχήματος. Με 4000+ παιχνίδια και άμεσες πληρωμές, είναι μια εξαιρετική επιλογή για το 2024.
+            </p>
+            <a href="afflink.com?utm-source-test=20bet" class="inline-block bg-dark text-white font-black text-2xl py-6 px-12 rounded-2xl hover:scale-105 transition-all">
+                ΞΕΚΙΝΗΣΤΕ ΤΩΡΑ
+            </a>
+            <p class="mt-6 text-sm font-bold opacity-75">* Παίξτε υπεύθυνα. Θέστε όρια.</p>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-black pt-20 pb-10 border-t border-white/10">
-        <div class="container mx-auto px-4 md:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-                <div>
-                    <a href="#" class="text-2xl font-black tracking-tighter flex items-center gap-2 mb-6">
-                        <span class="gold-gradient p-1.5 rounded-lg text-black"><i data-lucide="crown" class="w-6 h-6"></i></span>
-                        20BET<span class="gold-text">CASINO</span>
-                    </a>
-                    <p class="text-gray-500 text-sm leading-relaxed mb-6">
-                        Η κορυφαία πλατφόρμα για online καζίνο και αθλητικό στοίχημα στην Ελλάδα. Ασφάλεια, ταχύτητα και χιλιάδες παιχνίδια.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="font-bold uppercase mb-6 tracking-widest text-sm">Συνδεσμοι</h4>
-                    <ul class="space-y-4 text-gray-500 text-sm">
-                        <li><a href="#games" class="hover:text-white">Παιχνίδια</a></li>
-                        <li><a href="#promotions" class="hover:text-white">Προσφορές</a></li>
-                        <li><a href="#payments" class="hover:text-white">Πληρωμές</a></li>
-                        <li><a href="afflink.com?utm-source-test=20bet" class="hover:text-white">Εγγραφή</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold uppercase mb-6 tracking-widest text-sm">Υποστηριξη</h4>
-                    <ul class="space-y-4 text-gray-500 text-sm">
-                        <li><a href="#" class="hover:text-white">Βοήθεια</a></li>
-                        <li><a href="#" class="hover:text-white">Υπεύθυνο Παιχνίδι</a></li>
-                        <li><a href="#" class="hover:text-white">Όροι & Προϋποθέσεις</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="font-bold uppercase mb-6 tracking-widest text-sm">Νομιμα</h4>
-                    <div class="space-y-4">
-                        <div class="flex items-center gap-3">
-                            <img src="https://cdn-icons-png.flaticon.com/512/1055/1055833.png" class="w-10 h-10 grayscale opacity-50" alt="18+">
-                            <span class="text-[10px] text-gray-500 uppercase leading-tight">Strictly 18+. <br>Play responsibly.</span>
+    <footer class="bg-dark pt-24 pb-12 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-6">
+                        <div class="bg-primary p-1.5 rounded-lg">
+                            <i data-lucide="clover" class="w-6 h-6 text-dark"></i>
                         </div>
-                        <div class="p-3 glass-card rounded-xl text-[10px] text-gray-500 uppercase">
-                            License No: 8048/JAZ <br>
-                            Regulated by Curacao Gaming.
-                        </div>
+                        <span class="text-xl font-black tracking-tighter uppercase italic">20<span class="text-primary">Bet</span></span>
                     </div>
+                    <p class="text-gray-500 max-w-sm mb-8 leading-relaxed">
+                        Το 20Bet είναι ένα διεθνώς αδειοδοτημένο καζίνο που παρέχει ένα ασφαλές και δίκαιο περιβάλλον για παίκτες παγκοσμίως. Προωθούμε τον υπεύθυνο στοιχηματισμό.
+                    </p>
+                    <div class="flex gap-4 items-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/18plus.svg" alt="18+" class="w-10 h-10">
+                        <a href="https://www.begambleaware.org" target="_blank" class="text-gray-500 hover:text-white underline text-sm">BeGambleAware.org</a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold uppercase italic mb-6">Γρήγοροι Σύνδεσμοι</h4>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="#games" class="hover:text-primary transition-colors">Όλα τα Παιχνίδια</a></li>
+                        <li><a href="#bonuses" class="hover:text-primary transition-colors">Προσφορές</a></li>
+                        <li><a href="#payments" class="hover:text-primary transition-colors">Banking</a></li>
+                        <li><a href="afflink.com?utm-source-test=20bet" class="hover:text-primary transition-colors">VIP Club</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold uppercase italic mb-6">Βοήθεια & Νομικά</h4>
+                    <ul class="space-y-4 text-gray-500 text-sm">
+                        <li><a href="#" class="hover:text-primary transition-colors">Πολιτική Απορρήτου</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Όροι & Προϋποθέσεις</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Υπεύθυνο Παιχνίδι</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Υποστήριξη</a></li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="border-t border-white/5 pt-10 flex flex-col md:flex-row items-center justify-between gap-6">
-                <p class="text-[10px] text-gray-600 uppercase tracking-widest text-center md:text-left">
-                    © 2024 20Bet Review Greece. All Rights Reserved. Gambling involves risk. Please play responsibly. <br>
-                    Χρειάζεστε βοήθεια; Επισκεφθείτε το <a href="https://www.kethea.gr" class="underline">kethea.gr</a>
-                </p>
-                <div class="flex items-center gap-6 opacity-30">
-                    <i data-lucide="shield-check" class="w-8 h-8"></i>
-                    <i data-lucide="lock" class="w-8 h-8"></i>
-                </div>
+            <div class="border-t border-white/5 pt-12 text-center text-xs text-gray-600 space-y-4">
+                <p>Αδειοδοτημένο και Ρυθμιζόμενο από την Αρχή του Curacao.</p>
+                <p>Ο τζόγος εγκυμονεί κινδύνους. Παρακαλούμε παίξτε υπεύθυνα. Ο τζόγος μπορεί να προκαλέσει εθισμό.</p>
+                <p>&copy; 2024 20Bet Casino. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Chat Widget Placeholder -->
-    <a href="afflink.com?utm-source-test=20bet" class="fixed bottom-24 right-6 md:bottom-8 md:right-8 w-14 h-14 gold-gradient rounded-full text-black shadow-2xl flex items-center justify-center z-40 btn-animate">
-        <i data-lucide="message-circle" class="w-7 h-7"></i>
-    </a>
-
+    <!-- Scripts -->
     <script>
+        // Initialize Lucide Icons
         lucide.createIcons();
 
-        // Hamburger Menu
+        // Hamburger Menu Toggle
         const menuBtn = document.getElementById('menu-btn');
-        const closeMenu = document.getElementById('close-menu');
         const mobileMenu = document.getElementById('mobile-menu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
-
-        menuBtn.addEventListener('click', () => { mobileMenu.classList.remove('hidden'); document.body.style.overflow = 'hidden'; });
-        closeMenu.addEventListener('click', () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = 'auto'; });
-        mobileLinks.forEach(link => { link.addEventListener('click', () => { mobileMenu.classList.add('hidden'); document.body.style.overflow = 'auto'; }); });
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
 
         // Cookie Banner
         const cookieBanner = document.getElementById('cookie-banner');
         const acceptBtn = document.getElementById('accept-cookies');
-        if (!localStorage.getItem('cookiesAccepted')) { cookieBanner.style.display = 'flex'; } else { cookieBanner.style.display = 'none'; }
-        acceptBtn.addEventListener('click', () => { cookieBanner.style.display = 'none'; localStorage.setItem('cookiesAccepted', 'true'); });
+        acceptBtn.addEventListener('click', () => {
+            cookieBanner.style.display = 'none';
+        });
 
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) { header.classList.add('bg-black/80'); } else { header.classList.remove('bg-black/80'); }
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const element = document.querySelector(targetId);
+                if (element) {
+                    e.preventDefault();
+                    element.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    mobileMenu.classList.add('hidden');
+                }
+            });
         });
     </script>
 </body>
